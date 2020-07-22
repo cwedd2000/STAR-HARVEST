@@ -57,14 +57,14 @@ if ( place_meeting(x, y+1, obj_solid1) or collision_circle(x,y,60,o_moon,1,1)) a
 }
 if keyboard_check_pressed(ord("W")){	if jetpack>0 and vspd{vspd-=6*random(1.3);jetpack-=1*random(3);}
 	var counter1;
-	counter1=irandom_range(10,90);
+	counter1=irandom_range(1,20);
 	for (var i=0;i<counter1;i++){
 		instance_create_layer(x,y,"instances",o_walldeb);instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
 if keyboard_check(ord("W")){
 		if jetpack>0{vspd-=.6*random(3.8);jetpack-=1*random(12);
 			var counter;
-	counter=irandom_range(1,6);
+	counter=irandom_range(1,4);
 	for (var i=0;i<counter;i++){
 		instance_create_layer(x,y,"instances",o_walldeb);instance_create_layer(x,y,"instances",o_walldeb1);
 	}
