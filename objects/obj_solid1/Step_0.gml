@@ -10,6 +10,7 @@ if  collision_circle(x,y,16,o_play,1,1){hp-=(.1+1*random(.4))*distance_to_object
 
 
 if hp<0{instance_destroy();}
-if place_meeting(x,y,o_walldeb) or place_meeting(x,y,o_walldeb1) or   place_meeting(x,y,o_walldeb2){
-		hp-=(.04+1*random(1.4));image_blend=make_color_hsv(random(255),255,irandom_range(50,255));
+if place_meeting(x,y,o_walldeb1){
+		hp-=(.02+1*random(1.4));image_blend=make_color_hsv(random(255),255,irandom_range(50,255));
 }
+if place_meeting(x,y,o_walldeb) or place_meeting(x,y,o_walldeb2) {hp-=(.01+1*random(.2));image_blend=make_color_hsv(random(155),255,irandom_range(10,255));}
