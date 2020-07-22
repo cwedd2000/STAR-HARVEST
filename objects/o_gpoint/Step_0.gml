@@ -4,7 +4,7 @@ image_angle=direction;
 
 
 c+=1;
-if c<100 and distance_to_object(mouse)>400 and id==hook{direction=point_direction(x,y,mouse.x,mouse.y);}
+if c<40 and distance_to_object(mouse)>400 and id==hook{direction=point_direction(x,y,mouse.x,mouse.y);}
 speed+=irandom_range(0,3);
 image_angle=direction;
 if place_meeting(x + lengthdir_x(speed, direction), y + lengthdir_y(speed, direction), obj_solid1) or place_meeting(x + lengthdir_x(speed, direction), y + lengthdir_y(speed, direction), o_moon){
