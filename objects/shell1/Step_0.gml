@@ -3,7 +3,7 @@
 x=o_play.x;
 y=o_play.y;
 
-if keyboard_check_pressed(ord(1)){
+if keyboard_check_pressed(ord("1")){
 
  instance_deactivate_object(o_vector);
  instance_activate_object(o_vector);
@@ -13,7 +13,7 @@ if keyboard_check_pressed(ord(1)){
 }
 
 
-if keyboard_check_pressed(ord(2)){
+if keyboard_check_pressed(ord("2")){
 
  instance_deactivate_object(o_AK47);
  instance_activate_object(o_AK47);
@@ -22,7 +22,7 @@ if keyboard_check_pressed(ord(2)){
  instance_deactivate_object(o_DesertE);
 }
 
-if keyboard_check_pressed(ord(3)){
+if keyboard_check_pressed(ord("3")){
 
  instance_deactivate_object(o_P90);
  instance_activate_object(o_P90);
@@ -31,7 +31,7 @@ if keyboard_check_pressed(ord(3)){
 instance_deactivate_object(o_DesertE);
 }
 
-if keyboard_check_pressed(ord(4)){
+if keyboard_check_pressed(ord("4")){
 
  instance_deactivate_object(o_DesertE);
  instance_activate_object(o_DesertE);

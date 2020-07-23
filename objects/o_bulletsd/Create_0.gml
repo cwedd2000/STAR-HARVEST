@@ -3,7 +3,6 @@
 randomise();
 direction=point_direction(shell1.x,shell1.y,mouse_x,mouse_y);
 image_angle=direction;
-direction=direction+irandom_range(-4.2,4.2);
 speed=irandom_range(29,43);
 hp=2.1;
 image_xscale=.8;image_blend=make_color_rgb(155,255,255);
