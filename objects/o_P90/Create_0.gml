@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_speed=0;
+image_speed=0;randomise();
 x=shell1.x;
 y=shell1.y;
 instance_deactivate_object(o_P90);

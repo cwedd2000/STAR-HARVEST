@@ -15,8 +15,8 @@ if mouse_check_button_pressed(mb_right){xas=2600;
 yas=1625;
 }
 if mouse_check_button(mb_right){
-	if xas<4000{xas+=2;}
-	if yas<2500{yas+=2;}
+	if xas<4000{xas+=6;}
+	if yas<2500{yas+=6;}
 var pm = matrix_build_projection_ortho(xas,yas,1,10000);
 camera_set_proj_mat(camera,pm);}
 if !mouse_check_button(mb_right){xas=2600;

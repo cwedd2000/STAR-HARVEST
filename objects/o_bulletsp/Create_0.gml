@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+randomise();
 direction=point_direction(shell1.x,shell1.y,mouse_x,mouse_y);
 image_angle=direction;
 speed=irandom_range(22,32);image_blend=make_color_rgb(255,255,155);

@@ -1,6 +1,7 @@
 
 //damage
-
+if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
+		hp-=(.1+.3*random(1.2));}
 if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
 	hp-=(6+1*(other.speed))/2;
 }

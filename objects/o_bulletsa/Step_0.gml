@@ -7,6 +7,6 @@ if place_meeting(x + lengthdir_x(speed, direction), y + lengthdir_y(speed, direc
 	image_blend=make_color_rgb(irandom_range(120,220),0,0);
 
 if image_xscale>0{
-	image_xscale-=.033;image_yscale=image_xscale;}
+	image_xscale-=.023;image_yscale=image_xscale;}
 if image_xscale<.2{instance_destroy();}
 image_angle=direction;

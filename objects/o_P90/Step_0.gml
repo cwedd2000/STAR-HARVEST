@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 var dir = point_direction(shell1.x,shell1.y,mouse_x,mouse_y);
-x=shell1.x+lengthdir_x(30,dir);
-y=shell1.y+lengthdir_y(30,dir);;
+x=shell1.x+lengthdir_x(15,dir);
+y=shell1.y+lengthdir_y(15,dir);;
 direction=point_direction(shell1.x,shell1.y,mouse_x,mouse_y);
 image_angle=direction;
 

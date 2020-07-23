@@ -1,12 +1,14 @@
 
 //damage
-
+if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
+		hp-=(.1+.5*random(1.2));}
 if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
 	hp-=(5+1*(other.speed))/2;
 }
+if instance_exists(o_play) and distance_to_object(o_play)<400 and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1){hp+=.001*distance_to_object(o_play);}
 if hp<0{image_alpha-=.1;if image_alpha<0{instance_destroy();}}
 /// movement
-
+ 
 var rkey = collision_line(x+1500,y,x,y,o_play,1,1) and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1);
 var lkey =collision_line(x-1500,y,x,y,o_play,1,1) and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1);
 jkey = collision_line(x,y-1700,x,y,o_play,1,1) and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1);

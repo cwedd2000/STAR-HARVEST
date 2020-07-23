@@ -9,4 +9,4 @@ speed=irandom_range(2,4);
 
 hp=1.2;
 image_xscale=2;
-image_yscale=image_xscale;	audio_play_sound(snd_shoot,10,0);
+image_yscale=image_xscale;	audio_play_sound(snd_shoot,2,0);

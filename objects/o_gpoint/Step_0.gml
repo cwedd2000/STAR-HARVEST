@@ -8,8 +8,8 @@ image_angle=direction;
 if place_meeting(x + lengthdir_x(speed, direction), y + lengthdir_y(speed, direction), obj_solid1) or place_meeting(x + lengthdir_x(speed, direction), y + lengthdir_y(speed, direction), o_moon){
 	hp-=.02+1*random(2);	
 }if hp<0{speed=0;
-	h+=1;if h>80 and id==hook and hook !=0 and collision_line(x,y,(o_play.x+x)/2,(o_play.y+y)/2,obj_solid1,1,1){
-		mp_linear_step(o_play.x,o_play.y,5.5,0);}}
+	h+=1;if h>80 and id==hook and hook !=0 and collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1){
+		mp_linear_step(o_play.x,o_play.y,.8,0);}}
 image_angle=direction;
 if h>800{hook=0;instance_destroy();}
 

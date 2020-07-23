@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 ///INITIALISE VARIABLES
-grav = 1.2;
+grav = 1.2;randomise();
 spd = 3;
 hspd = 0;
 vspd = 0;

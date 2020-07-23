@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-direction=point_direction(x,y,o_play.x,o_play.y);
+direction=point_direction(x,y,o_play.x,o_play.y);randomise();
 image_angle=direction;
 speed=irandom_range(10,33);
 hp=5;

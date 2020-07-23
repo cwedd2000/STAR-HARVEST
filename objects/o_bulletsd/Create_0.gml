@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+randomise();
 direction=point_direction(shell1.x,shell1.y,mouse_x,mouse_y);
 image_angle=direction;
 direction=direction+irandom_range(-4.2,4.2);
