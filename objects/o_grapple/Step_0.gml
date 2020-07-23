@@ -1,10 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 if keyboard_check(ord("E")) and hook==0 and cangrapple{
-	hook=0;
 	hook=instance_create_layer(o_play.x,o_play.y,"Instances",o_gpoint);
 	cangrapple=0;
-	alarm[0]=60;
+	alarm[0]=50;
 	}
 
 var dir;

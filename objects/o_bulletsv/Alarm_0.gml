@@ -5,7 +5,7 @@
 	chance1=choose(0,1);
 	if chance1 == 0{
 		hp-=.5;
-    direction = direction + irandom_range(0, 90);}
+    direction = direction + irandom_range(0, 15);}
    if chance1 == 1{
-	   hp-=2;
-	direction = direction - irandom_range(0, 90);}
+	   hp-=.9;
+	direction = direction - irandom_range(0, 15);}

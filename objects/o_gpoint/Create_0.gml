@@ -1,11 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 direction=point_direction(x,y,mouse_x,mouse_y);
 if instance_exists(o_play){x=o_play.x;y=o_play.y;}
 image_angle=direction;
-c=0;h=0;
-speed=irandom_range(2,4);
+h=0;c=0;hitmun=0;
+speed=irandom_range(3,5);
 
 hp=1.2;
 image_xscale=2;

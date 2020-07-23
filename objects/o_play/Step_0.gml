@@ -18,7 +18,7 @@ if quit{game_end();}
 var restart = keyboard_check(ord("R"));
 if restart{game_restart();}
 
-if place_meeting(x,y,o_bulletsenem){playhp-=random(1);}
+if place_meeting(x,y,o_bulletsenem){playhp-=random(.7);}
 if collision_circle(x,y,65,o_fliers,1,1){playhp-=.55;}
 if playhp<0{game_restart();}
 
@@ -54,7 +54,7 @@ if keyboard_check_pressed(ord("Z"))
         window_set_fullscreen(true);}}
 		
 if ( (collision_circle(x,y,50,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<1000{
-		jetpack+=10;
+		jetpack+=20;
 }
 audio_sound_gain(snd_blast1,0,2);
 audio_sound_gain(snd_blast2,0,2);
