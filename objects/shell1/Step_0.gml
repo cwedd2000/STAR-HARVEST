@@ -2,7 +2,7 @@
 // You can write your code in this editor
 x=o_play.x;
 y=o_play.y;
-
+image_angle=direction;
 direction=point_direction(x,y,mouse_x,mouse_y);
 
 if keyboard_check_pressed(ord(1)){

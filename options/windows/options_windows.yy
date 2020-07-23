@@ -8,12 +8,12 @@
     "option_windows_company_info": "YoYo Games Ltd",
     "option_windows_copy_exe_to_dest": false,
     "option_windows_copyright_info": "(c) 2018 CompanyName",
-    "option_windows_description_info": "A GameMaker Studio 2 Game",
+    "option_windows_description_info": "A GameMaker Studio 2 Game ",
     "option_windows_disable_sandbox": false,
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "Made in GameMaker Studio 2",
+    "option_windows_display_name": "Star Harvest",
     "option_windows_enable_steam": false,
-    "option_windows_executable_name": "${project_name}",
+    "option_windows_executable_name": "${StarHarvest}",
     "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
     "option_windows_installer_finished": "${base_options_dir}\\windows\\installer\\finished.bmp",
     "option_windows_installer_header": "${base_options_dir}\\windows\\installer\\header.bmp",
@@ -31,9 +31,9 @@
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": false,
     "option_windows_version": {
-        "build": 0,
-        "major": 1,
-        "minor": 0,
+        "build": 8,
+        "major": 0,
+        "minor": 1,
         "revision": 0
     },
     "option_windows_vsync": false
