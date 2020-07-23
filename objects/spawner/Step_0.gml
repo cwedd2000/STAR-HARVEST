@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-chi=choose(0,1,4,-2,-3);
+chi=choose(0,1,2,3);
 xa=0;
 ya=0;
 xa=irandom_range(-4000,4000);
