@@ -8,6 +8,7 @@ if place_meeting(x,y,obj_solid1){
 if vspeed>0{vspeed-=4;}hp-=.8*random(3);
 }vspeed+=2.5;
 instance_create_layer(x,y,"Instances",o_walldeb11);
+
 if image_xscale<0{instance_destroy();}
 image_xscale-=.03*random(19);
 image_yscale=image_xscale;

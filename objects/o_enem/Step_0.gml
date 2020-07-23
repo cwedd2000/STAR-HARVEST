@@ -18,7 +18,7 @@ jkey = collision_line(x,y-1700,x,y,o_play,1,1) and !collision_line(x,y,o_play.x,
 if !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1) and distance_to_object(o_play)<1900 and canshoot{
 	canshoot=0;alarm[0]=16;instance_create_layer(x,y,"instances",o_bulletsenem);}
 
-if collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1) and distance_to_object(o_play)<1100 and canshoot{
+if collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1) and distance_to_object(o_play)<910 and canshoot{
 	canshoot=0;alarm[0]=68;instance_create_layer(x,y,"instances",o_bulletsenem);}
 
 

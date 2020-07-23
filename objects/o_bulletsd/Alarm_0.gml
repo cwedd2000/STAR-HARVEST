@@ -10,4 +10,4 @@
     direction = direction + irandom_range(0, 90);}
    if chance1 == 1{
 	   hp-=3;
-	direction = direction - irandom_range(0, 90);instance_create_layer(x,y,"Instances",o_walldeb1);}
+	direction = direction - irandom_range(0, 90);}

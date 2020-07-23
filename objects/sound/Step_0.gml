@@ -3,5 +3,5 @@
 x=o_play.x;
 y=o_play.y;
 cho=-1;
-if cho==1{audio_play_sound(snd_backg,1,0);}
-if cho==0{audio_play_sound(snd_backg1,1,0);}
+if cho==1{audio_play_sound(snd_backg,2,0);}
+if cho==0{audio_play_sound(snd_backg1,2,0);}

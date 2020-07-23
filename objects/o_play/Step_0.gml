@@ -12,13 +12,14 @@ dex +=1;
 
 jkey = keyboard_check_pressed(vk_space);
 var quit = keyboard_check_pressed(vk_escape);
-if collision_circle(x,y,35,healthdrop,1,1){playhp+=10;}
+if collision_circle(x,y,35,healthdrop,1,1){playhp+=6;}
 
 if quit{game_end();}
 var restart = keyboard_check(ord("R"));
 if restart{game_restart();}
 
-if place_meeting(x,y,o_bulletsenem){playhp-=(1+1*other.speed)/2;}
+if place_meeting(x,y,o_bulletsenem){playhp-=random(1);}
+if collision_circle(x,y,65,o_fliers,1,1){playhp-=.55;}
 if playhp<0{game_restart();}
 
 
@@ -34,7 +35,7 @@ if ungrapple {instance_deactivate_object(o_grapple);grappled=0;hook=0;}
 
 if instance_exists(o_gpoint) and grappled !=0 and hook !=0 {
 	if hook.speed==0 {
-		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,32,1);}
+		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,33,1);}
 	    if keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,34,0);}
 			
 		}
@@ -52,7 +53,7 @@ if keyboard_check_pressed(ord("Z"))
         {
         window_set_fullscreen(true);}}
 		
-if ( (collision_circle(x,y,40,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<1000{
+if ( (collision_circle(x,y,50,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<1000{
 		jetpack+=10;
 }
 audio_sound_gain(snd_blast1,0,2);
@@ -64,7 +65,7 @@ if keyboard_check_pressed(ord("W")){var che;
 	if che==1{audio_sound_gain(snd_blast1,.6,2);audio_play_sound(snd_blast1,1,0);}
 	if jetpack>0 and vspd{vspd-=6*random(1.3);jetpack-=1*random(9);}
 	var counter1;	
-	counter1=irandom_range(5,13);
+	counter1=irandom_range(1,4);
 	for (var i=0;i<counter1;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
@@ -88,7 +89,7 @@ audio_sound_gain(snd_blast2,0,1);
 	
 		if jetpack>0{vspd-=.4*random(3.96);jetpack-=1*random(22);
 			var counter;
-	counter=irandom_range(1,10);
+	counter=irandom_range(1,3);
 	for (var i=0;i<counter;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}
@@ -116,12 +117,12 @@ if (vspd < 15)
 	//double jump
   if (jkey) and canjumpack and jetpack>0
         {
-        vspd = -jspd;
+        vspd = -jspd/1.2;
 		canjumpack=0;
 		alarm[0]=58;
 			if jetpack>0{jetpack-=100;}
 			var counter;
-	counter=irandom_range(6,24);
+	counter=irandom_range(2,4);
 	for (var i=0;i<counter;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}
