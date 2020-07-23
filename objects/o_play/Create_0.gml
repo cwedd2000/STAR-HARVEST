@@ -4,7 +4,7 @@
 grav = 1.2;dex =1;
 
 randomise();
-spd = 16;grappled=0;
+spd = 14;grappled=0;
 hspd = 0;
 vspd = 0;
 jspd = 32;

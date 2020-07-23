@@ -4,8 +4,8 @@
 	chance1=-1;
 	chance1=choose(0,1);
 	if chance1 == 0{
-		hp-=2;
+		hp-=4;
     direction = direction + irandom_range(0, 90);}
    if chance1 == 1{
-	   hp-=1;
-	direction = direction - irandom_range(0, 90);instance_create_layer(x,y,"Instances",o_walldeb2);}
+	   hp-=2;
+	direction = direction - irandom_range(0, 90);instance_create_layer(x,y,"Instances",o_walldeb1);}

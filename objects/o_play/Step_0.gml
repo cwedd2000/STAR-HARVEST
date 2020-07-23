@@ -5,8 +5,11 @@ grappled = keyboard_check(ord("E"));
 var ungrapple = keyboard_check_released(ord("E"));
 var rkey = keyboard_check(ord("D"));
 var lkey = keyboard_check(ord("A"));
+
 var jkey = 0;
+
 dex +=1;
+
 jkey = keyboard_check_pressed(vk_space);
 var quit = keyboard_check_pressed(vk_escape);
 if collision_circle(x,y,35,healthdrop,1,1){playhp+=10;}
@@ -31,8 +34,8 @@ if ungrapple {instance_deactivate_object(o_grapple);grappled=0;hook=0;}
 
 if instance_exists(o_gpoint) and grappled !=0 and hook !=0 and hook.speed<.2{
 	if hook.speed==0 {
-		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,20,1);}
-	    if keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,30,0);}
+		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,22,1);}
+	    if keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,25,0);}
 			
 		}
 		
@@ -49,8 +52,8 @@ if keyboard_check_pressed(ord("Z"))
         {
         window_set_fullscreen(true);}}
 		
-if ( (collision_circle(x,y,60,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<1000{
-		jetpack+=35;
+if ( (collision_circle(x,y,40,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<1000{
+		jetpack+=10;
 }
 audio_sound_gain(snd_blast1,0,2);
 audio_sound_gain(snd_blast2,0,2);
@@ -59,9 +62,9 @@ if keyboard_check_pressed(ord("W")){var che;
 	che=choose(0,1);
 	if che ==0{audio_sound_gain(snd_blast2,.6,2);audio_play_sound(snd_blast2,1,0);}
 	if che==1{audio_sound_gain(snd_blast1,.6,2);audio_play_sound(snd_blast1,1,0);}
-	if jetpack>0 and vspd{vspd-=6*random(1.3);jetpack-=1*random(3);}
+	if jetpack>0 and vspd{vspd-=6*random(1.3);jetpack-=1*random(9);}
 	var counter1;	
-	counter1=irandom_range(4,8);
+	counter1=irandom_range(5,13);
 	for (var i=0;i<counter1;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
@@ -83,9 +86,9 @@ audio_sound_gain(snd_blast2,0,1);
 		audio_sound_gain(snd_blast1,.1,0);
 	audio_sound_gain(snd_blast1,0,1);}
 	
-		if jetpack>0{vspd-=.4*random(3.8);jetpack-=1*random(12);
+		if jetpack>0{vspd-=.4*random(3.96);jetpack-=1*random(22);
 			var counter;
-	counter=irandom_range(1,4);
+	counter=irandom_range(1,10);
 	for (var i=0;i<counter;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}
@@ -98,29 +101,34 @@ if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
     {
     vspd = 0;
     //jumping
-    if (jkey) and canjumpack
+    if (jkey) 
         {
         vspd = -jspd;
-		canjumpack=0;
-		alarm[0]=5;
         }
     }
 else
 {
 //gravity
-if (vspd < 12)
+if (vspd < 15)
     {
     vspd += grav;
     }
+	//double jump
+  if (jkey) and canjumpack and jetpack>0
+        {
+        vspd = -jspd;
+		canjumpack=0;
+		alarm[0]=58;
+			if jetpack>0{jetpack-=100;}
+			var counter;
+	counter=irandom_range(6,24);
+	for (var i=0;i<counter;i++){
+		instance_create_layer(x,y,"instances",o_walldeb1);
+	}
+        }
 }
 
-//double jump
-  if (jkey) and canjumpack
-        {
-        vspd = -jspd/1.6;
-		canjumpack=0;
-		alarm[0]=55;
-        }
+
 
 // moving right
 if (rkey)

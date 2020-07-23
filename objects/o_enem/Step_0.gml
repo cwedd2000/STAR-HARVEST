@@ -50,7 +50,7 @@ if (place_meeting(x, y+1, obj_solid1))
 else
 {
 //gravity
-if (vspd < 25)
+if (vspd < 45)
     {
     vspd += grav;
     }
@@ -78,13 +78,24 @@ if (place_meeting(x+hspd, y, obj_solid1))
     x += sign(hspd);}
      hspd = 0;
     }
-
+if (place_meeting(x+2*hspd, y, o_moon))
+    {
+    while (!place_meeting(x+2*sign(hspd), y, o_moon)){
+    x += sign(hspd);}
+     hspd = 0;
+    }
 //move horizontally
 x += hspd;
 // vertical collision
 if (place_meeting(x, y+vspd, obj_solid1))
     {
     while (!place_meeting(x, y+sign(vspd), obj_solid1)){
+    y += sign(vspd);}
+    vspd = 0;
+    }
+if (place_meeting(x, y+2*vspd, o_moon))
+    {
+    while (!place_meeting(x, y+2*sign(vspd), o_moon)){
     y += sign(vspd);}
     vspd = 0;
     }

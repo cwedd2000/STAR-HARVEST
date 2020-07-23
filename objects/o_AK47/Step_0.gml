@@ -9,7 +9,7 @@ image_angle=direction;
 if mouse_check_button(mb_left) and canshoot and instance_exists(o_AK47){
 	image_speed=1;
 	canshoot=false;
-	alarm[0]=9;
+	alarm[0]=7;
 
 	instance_create_layer(x,y,"instances",o_bulletsa);
 }
