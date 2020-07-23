@@ -32,10 +32,10 @@ if grapple {instance_activate_object(o_grapple);}
 
 if ungrapple {instance_deactivate_object(o_grapple);grappled=0;hook=0;}
 
-if instance_exists(o_gpoint) and grappled !=0 and hook !=0 and hook.speed<.2{
+if instance_exists(o_gpoint) and grappled !=0 and hook !=0 {
 	if hook.speed==0 {
-		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,22,1);}
-	    if keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,25,0);}
+		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,32,1);}
+	    if keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,34,0);}
 			
 		}
 		

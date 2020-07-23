@@ -9,7 +9,7 @@ if place_meeting(x + lengthdir_x(speed, direction), y + lengthdir_y(speed, direc
 	hp-=.02+1*random(2);	
 }
 if hp<0{
-	speed=speed/2;
+	speed=0;
 	}
 image_angle=direction;
 if h>800{hook=0;instance_destroy();}
