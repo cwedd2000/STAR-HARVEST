@@ -1,5 +1,7 @@
 
 //damage
+if place_meeting(x,y,obj_solid1){image_index=1;}
+if !place_meeting(x,y,obj_solid1){image_index=0;}
 if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
 		hp-=(.1+.1*random(1.2));}
 if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
