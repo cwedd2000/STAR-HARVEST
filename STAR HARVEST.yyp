@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "69647e00-d83c-464e-af91-7df935a56501",
+            "Value": {
+                "id": "9e815075-88cf-41e4-a9d5-b95bc4fc9f93",
+                "resourcePath": "sprites\\s_planet\\s_planet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6af8a3ce-dbd5-4400-baa1-3cd316b40e7a",
             "Value": {
                 "id": "4e1a6aa6-c771-48ad-aaf5-eef3cdf7aa09",
@@ -356,6 +364,14 @@
                 "id": "359a4c87-6373-4094-931b-849f4b5e494f",
                 "resourcePath": "sounds\\snd_backg\\snd_backg.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "95360491-684f-4b13-9948-6900d426302d",
+            "Value": {
+                "id": "8aec9fc6-87db-4d95-92a2-427c9c2c8247",
+                "resourcePath": "objects\\o_planet\\o_planet.yy",
+                "resourceType": "GMObject"
             }
         },
         {
