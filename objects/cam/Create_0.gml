@@ -5,11 +5,12 @@ var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
 camera_set_view_mat(camera,vm);
 
 t=0;
-var pm = matrix_build_projection_ortho(1080,600,1,10000);
-camera_set_proj_mat(camera,pm);
 
-xas=1080;
-yas=600;
+
+xas=1200;
+yas=625;
+var pm = matrix_build_projection_ortho(xas,yas,1,10000);
+camera_set_proj_mat(camera,pm);
 
 view_camera[0]=camera;
 follow=o_play;

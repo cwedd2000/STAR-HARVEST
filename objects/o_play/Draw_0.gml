@@ -4,8 +4,8 @@ draw_self();
 if !instance_exists(o_enem) and !instance_exists(o_fliers){draw_text_color(x+90,y-50,"Victory! Your Score is \n-  ",c_yellow,c_yellow,c_yellow,c_yellow,1);draw_text_color(x+90,y-30,playhp,c_yellow,c_yellow,c_yellow,c_yellow,1);}
 else{draw_text_color(x+40,y-36,jetpack,c_aqua,c_aqua,c_aqua,c_aqua,1);
 	draw_text_color(x+40,y-50,playhp,c_white,c_white,c_white,c_white,1);
-	draw_text_color(x+40,y-20,-y,c_yellow,c_yellow,c_yellow,c_yellow,1);
-	draw_text_color(x-110,y-40,iron,c_yellow,c_yellow,c_yellow,c_yellow,1);
+	draw_text_color(x+40,y-20,max(-y),c_yellow,c_yellow,c_yellow,c_yellow,1);
+	draw_text_color(x-100,y-40,iron,c_yellow,c_yellow,c_yellow,c_yellow,1);
 	
 	
 	if dex<300{

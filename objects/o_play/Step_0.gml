@@ -56,44 +56,7 @@ if keyboard_check_pressed(ord("Z"))
 if ( (collision_circle(x,y,50,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<1000{
 		jetpack+=20;
 }
-audio_sound_gain(snd_blast1,0,2);
-audio_sound_gain(snd_blast2,0,2);
-if keyboard_check_pressed(ord("W")){var che;
-	che=-1;
-	che=choose(0,1);
-	if che ==0{audio_sound_gain(snd_blast2,.6,2);audio_play_sound(snd_blast2,1,0);}
-	if che==1{audio_sound_gain(snd_blast1,.6,2);audio_play_sound(snd_blast1,1,0);}
-	if jetpack>0 and vspd{vspd-=6*random(1.3);jetpack-=1*random(9);}
-	var counter1;	
-	counter1=irandom_range(5,9);
-	for (var i=0;i<counter1;i++){
-		instance_create_layer(x,y,"instances",o_walldeb1);
-	}}
-	
 
-
-
-if keyboard_check(ord("W")) and jetpack>0{
-	var che;
-	che=-1;
-	che=choose(0,1);
-	if che ==0{audio_play_sound(snd_blast2,1,0);
-		audio_sound_gain(snd_blast2,random(.12),0);
-	audio_sound_gain(snd_blast2,0,2);}
-	if che==1{audio_play_sound(snd_blast1,1,0);
-		audio_sound_gain(snd_blast1,random(.35),0);
-	audio_sound_gain(snd_blast1,0,2);}
-	
-		if jetpack>0{vspd-=.4*random(3.96);jetpack-=1*random(22);
-			var counter;
-	
-		instance_create_layer(x,y,"instances",o_walldeb1);
-	
-			}
-}
-if !keyboard_check(ord("W")){
-audio_sound_gain(snd_blast1,0,1);
-audio_sound_gain(snd_blast2,0,1);}
 //check for ground
 if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
     {
@@ -119,7 +82,7 @@ if (vspd < 15)
 		alarm[0]=58;
 			if jetpack>0{jetpack-=100;}
 			var counter;
-	counter=irandom_range(2,4);
+	counter=irandom_range(2,8);
 	for (var i=0;i<counter;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}
