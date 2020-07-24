@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "167e0c06-b321-4512-88e7-520a8e0f6df9",
+            "Value": {
+                "id": "703c031d-ced7-4010-a7ab-a57b0b620ac3",
+                "resourcePath": "objects\\o_minerals\\o_minerals.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "19eedbb8-4dc0-4fee-8a96-3d9aa97a48bf",
             "Value": {
                 "id": "654759f9-0110-4f13-9b57-57a849d18446",

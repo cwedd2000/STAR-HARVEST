@@ -70,7 +70,9 @@ if (lkey)
 if ((!!rkey && !!lkey) || (rkey && lkey))
     {
     hspd = 0;
-    }
+}
+	
+
 // Horizontal collision
 if (place_meeting(x+hspd, y, obj_solid1))
     {
@@ -78,9 +80,15 @@ if (place_meeting(x+hspd, y, obj_solid1))
     x += sign(hspd);}
      hspd = 0;
     }
-if (place_meeting(x+2*hspd, y, o_moon))
+if (place_meeting(x+hspd, y, o_moon))
     {
-    while (!place_meeting(x+2*sign(hspd), y, o_moon)){
+    while (!place_meeting(x+sign(hspd), y, o_moon)){
+    x += sign(hspd);}
+     hspd = 0;
+    }
+if (place_meeting(x+hspd, y, o_planet))
+    {
+    while (!place_meeting(x+sign(hspd), y, o_planet)){
     x += sign(hspd);}
      hspd = 0;
     }
@@ -93,9 +101,15 @@ if (place_meeting(x, y+vspd, obj_solid1))
     y += sign(vspd);}
     vspd = 0;
     }
-if (place_meeting(x, y+2*vspd, o_moon))
+if (place_meeting(x, y+vspd, o_moon))
     {
-    while (!place_meeting(x, y+2*sign(vspd), o_moon)){
+    while (!place_meeting(x, y+sign(vspd), o_moon)){
+    y += sign(vspd);}
+    vspd = 0;
+    }
+if (place_meeting(x, y+vspd, o_planet))
+    {
+    while (!place_meeting(x, y+sign(vspd), o_planet)){
     y += sign(vspd);}
     vspd = 0;
     }

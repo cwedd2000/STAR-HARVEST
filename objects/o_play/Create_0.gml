@@ -2,9 +2,9 @@
 // You can write your code in this editor
 ///INITIALISE VARIABLES
 grav = 1.2;dex =1;
-
+iron=0;
 randomise();
-spd = 14;grappled=0;
+spd = 12;grappled=0;
 hspd = 0;
 vspd = 0;
 jspd = 32;

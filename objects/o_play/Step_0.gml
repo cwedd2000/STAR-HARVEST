@@ -12,7 +12,7 @@ dex +=1;
 
 jkey = keyboard_check_pressed(vk_space);
 var quit = keyboard_check_pressed(vk_escape);
-if collision_circle(x,y,35,healthdrop,1,1){playhp+=6;}
+if collision_circle(x,y,35,healthdrop,1,1){playhp+=6;}if collision_circle(x,y,35,o_minerals,1,1){iron +=1;}
 
 if quit{game_end();}
 var restart = keyboard_check(ord("R"));
@@ -151,9 +151,15 @@ if (place_meeting(x+hspd, y, obj_solid1))
     x += sign(hspd);}
      hspd = 0;
     }
-if (place_meeting(x+2*hspd, y, o_moon))
+if (place_meeting(x+hspd, y, o_moon))
     {
-    while (!place_meeting(x+2*sign(hspd), y, o_moon)){
+    while (!place_meeting(x+sign(hspd), y, o_moon)){
+    x += sign(hspd);}
+     hspd = 0;
+    }
+if (place_meeting(x+hspd, y, o_planet))
+    {
+    while (!place_meeting(x+sign(hspd), y, o_planet)){
     x += sign(hspd);}
      hspd = 0;
     }
@@ -166,9 +172,15 @@ if (place_meeting(x, y+vspd, obj_solid1))
     y += sign(vspd);}
     vspd = 0;
     }
-if (place_meeting(x, y+2*vspd, o_moon))
+if (place_meeting(x, y+vspd, o_moon))
     {
-    while (!place_meeting(x, y+2*sign(vspd), o_moon)){
+    while (!place_meeting(x, y+sign(vspd), o_moon)){
+    y += sign(vspd);}
+    vspd = 0;
+    }
+if (place_meeting(x, y+vspd, o_planet))
+    {
+    while (!place_meeting(x, y+sign(vspd), o_planet)){
     y += sign(vspd);}
     vspd = 0;
     }

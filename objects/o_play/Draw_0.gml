@@ -5,6 +5,7 @@ if !instance_exists(o_enem) and !instance_exists(o_fliers){draw_text_color(x+90,
 else{draw_text_color(x+40,y-36,jetpack,c_aqua,c_aqua,c_aqua,c_aqua,1);
 	draw_text_color(x+40,y-50,playhp,c_white,c_white,c_white,c_white,1);
 	draw_text_color(x+40,y-20,-y,c_yellow,c_yellow,c_yellow,c_yellow,1);
+	draw_text_color(x-80,y-40,iron,c_yellow,c_yellow,c_yellow,c_yellow,1);
 	
 	
 	if dex<500{

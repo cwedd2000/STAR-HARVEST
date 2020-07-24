@@ -13,7 +13,10 @@ if place_meeting(x +   lengthdir_x(speed, direction), y + lengthdir_y(speed, dir
 if hitmun and id == hook{x=mun.x;
 	y=(mun.y);h+=.06;}if h>4.3{hook=0;instance_destroy();}
 if place_meeting(x, y , obj_solid1) {
-	hp-=.02+1*random(2);	
+	hp-=.03+1*random(2);	
+}
+if place_meeting(x, y , o_planet) {
+	hp-=.04+1*random(2);	
 }
 if hp<0{
 	speed=0;
