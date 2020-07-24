@@ -6,5 +6,5 @@ if vspeed>0{vspeed-=3;}hp-=.1*random(2);
 }
 vspeed+=2.6;
 if image_xscale<0{instance_destroy();}
-image_xscale-=.09*random(3);
+image_xscale-=.3*random(3);
 image_yscale=image_xscale;
