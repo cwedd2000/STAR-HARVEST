@@ -12,6 +12,9 @@ if collision_circle(x,y,18,o_play,1,1){hp-=random(.8);image_blend=make_color_hsv
 
 if hp<0{instance_destroy();}
 
-if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
-		hp-=(.1+.5*random(1.8))*other.image_xscale;image_blend=make_color_hsv(random(14),irandom_range(130,255),irandom_range(170,255));
+if place_meeting(x,y,o_walldeb1){
+		hp-=(.2+.5*random(1.8))*other.image_xscale;image_blend=make_color_hsv(random(8),irandom_range(130,255),irandom_range(170,255));
+}
+if place_meeting(x,y,o_walldeb11){
+	hp-=(.1+.5*random(1.8))*other.image_xscale;image_blend=make_color_hsv(random(38),irandom_range(130,255),irandom_range(170,255));	
 }

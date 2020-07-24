@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if hp<0{instance_destroy();}
 
-if place_meeting(x, y, o_fliers) or  place_meeting(x, y, o_moon) or place_meeting(x, y, o_enem) or place_meeting(x, y, obj_solid1)
+if  place_meeting(x, y, o_planet) or place_meeting(x, y, o_fliers) or  place_meeting(x, y, o_moon) or place_meeting(x, y, o_enem) or place_meeting(x, y, obj_solid1)
 {
 alarm[0]=2;	
 }if image_xscale>0{

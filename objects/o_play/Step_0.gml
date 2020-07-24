@@ -78,7 +78,7 @@ if keyboard_check(ord("W")) and jetpack>0{
 	che=-1;
 	che=choose(0,1);
 	if che ==0{audio_play_sound(snd_blast2,1,0);
-		audio_sound_gain(snd_blast2,random(.35),0);
+		audio_sound_gain(snd_blast2,random(.12),0);
 	audio_sound_gain(snd_blast2,0,2);}
 	if che==1{audio_play_sound(snd_blast1,1,0);
 		audio_sound_gain(snd_blast1,random(.35),0);
