@@ -65,7 +65,7 @@ if keyboard_check_pressed(ord("W")){var che;
 	if che==1{audio_sound_gain(snd_blast1,.6,2);audio_play_sound(snd_blast1,1,0);}
 	if jetpack>0 and vspd{vspd-=6*random(1.3);jetpack-=1*random(9);}
 	var counter1;	
-	counter1=irandom_range(1,4);
+	counter1=irandom_range(3,9);
 	for (var i=0;i<counter1;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
@@ -86,7 +86,7 @@ if keyboard_check(ord("W")) and jetpack>0{
 	
 		if jetpack>0{vspd-=.4*random(3.96);jetpack-=1*random(22);
 			var counter;
-	counter=irandom_range(1,3);
+	counter=irandom_range(2,5);
 	for (var i=0;i<counter;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}
