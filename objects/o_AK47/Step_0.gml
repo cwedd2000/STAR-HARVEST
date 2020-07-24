@@ -13,5 +13,15 @@ if mouse_check_button(mb_left) and canshoot and instance_exists(o_AK47){
 
 	instance_create_layer(x,y,"instances",o_bulletsa);
 }
+if (mouse_check_button(mb_right) or keyboard_check(ord("F"))) and cangoo and instance_exists(o_AK47){
+	image_speed=1;
+	cangoo=false;
+	alarm[1]=33;
+
+	instance_create_layer(x,y,"instances",o_bulletsa1);
+}
 if mouse_check_button_released(mb_left) {image_speed=0;image_index=0;}
+if mouse_check_button_released(mb_middle)  and !mouse_check_button(mb_left)  {image_speed=0;image_index=0;}
+if !keyboard_check(ord("G")) and !mouse_check_button(mb_left) {image_speed=0;image_index=0;}
+
 

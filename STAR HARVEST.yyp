@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "7edbf0b9-02fd-4f2f-8de4-38150d37666b",
+            "Value": {
+                "id": "d5b0c7ba-2792-4586-a7ee-7f7ec6e1a9c6",
+                "resourcePath": "objects\\o_bulletsa1\\o_bulletsa1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "80d62c57-d3e2-48c9-ae4b-1cb8449ea3f3",
             "Value": {
                 "id": "650c9845-14a5-4c2e-8a58-e6f061b42825",
