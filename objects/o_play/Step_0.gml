@@ -70,22 +70,20 @@ if keyboard_check_pressed(ord("W")){var che;
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
 	
-audio_sound_gain(snd_blast1,0,2);
-audio_sound_gain(snd_blast2,0,2);
+audio_sound_gain(snd_blast1,0,3);
+audio_sound_gain(snd_blast2,0,3);
 
 
 if keyboard_check(ord("W")) and jetpack>0{
-audio_sound_gain(snd_blast1,0,1);
-audio_sound_gain(snd_blast2,0,1);
 	var che;
 	che=-1;
 	che=choose(0,1);
 	if che ==0{audio_play_sound(snd_blast2,1,0);
 		audio_sound_gain(snd_blast2,.1,0);
-	audio_sound_gain(snd_blast2,0,1);}
+	audio_sound_gain(snd_blast2,0,2);}
 	if che==1{audio_play_sound(snd_blast1,1,0);
 		audio_sound_gain(snd_blast1,.1,0);
-	audio_sound_gain(snd_blast1,0,1);}
+	audio_sound_gain(snd_blast1,0,2);}
 	
 		if jetpack>0{vspd-=.4*random(3.96);jetpack-=1*random(22);
 			var counter;
