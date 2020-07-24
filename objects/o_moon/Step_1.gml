@@ -10,6 +10,6 @@ if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeti
 if place_meeting(x+lengthdir_x(speed,direction),y+lengthdir_y(speed,direction),obj_solid1){if speed>0{speed-=.5;}}
 if place_meeting(x,y,obj_solid1){if speed>0{speed-=.9;}}
 if place_meeting(x,y,o_moon){if speed>0{speed=0;}}
-if collision_circle(x,y,1000/image_xscale,o_play,1,1){vspeed+=2.5;}
+if collision_circle(x,y,1000/image_xscale,o_play,1,1){if speed>0{speed=0;}}
 
 if hp<0{image_alpha-=.2;if image_alpha<0{instance_destroy();}}
