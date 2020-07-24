@@ -4,7 +4,6 @@ chi=choose(0,1,2,3);
 xa=0;
 ya=0;
 xa=irandom_range(-4000,4000);
-
 ya=irandom_range(-4000,4000);
 x=xa;
 y=ya;
