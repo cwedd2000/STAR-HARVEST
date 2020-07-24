@@ -8,7 +8,8 @@ alarm[0]=10;
 	image_blend=make_color_rgb(irandom_range(20,225),0,0);
 
 if image_xscale>0{
-	image_xscale-=.003;image_yscale=image_xscale;}
+	image_xscale-=.15;image_yscale=image_xscale;}
 if image_xscale<.2{instance_destroy();}
 image_angle=direction;
-instance_create_layer(x,y,"instances",obj_solid1);
+var shot=instance_create_layer(x,y,"instances",obj_solid1);
+with(shot){image_blend=make_color_hsv(random(60),random_range(155,255),random_range(155,255));}
