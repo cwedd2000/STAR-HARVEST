@@ -8,14 +8,16 @@ if (follow != noone){
 	yTo=follow.y;
 	
 }
-sp = o_play.vspeed;
+
 
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
 camera_set_view_mat(camera,vm);
+t+=.1;
+
+if xas<2080{xas+=.1*t;}
+if yas<1300{yas+=.1*t;}
 
 
-xas+=1*sp;
-yas+=1*sp;
 var pm = matrix_build_projection_ortho(xas,yas,1,10000);
 camera_set_proj_mat(camera,pm);
 
