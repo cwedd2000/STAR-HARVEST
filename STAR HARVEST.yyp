@@ -103,14 +103,6 @@
             }
         },
         {
-            "Key": "1fbf828d-5ec3-452f-89f5-92ea193f7aa8",
-            "Value": {
-                "id": "f1083685-7e2e-4647-b8e7-90d66fc83273",
-                "resourcePath": "objects\\o_walldeb2\\o_walldeb2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "256e2be6-92c7-448c-bdb8-1cec8ec9fb7a",
             "Value": {
                 "id": "6b5c4984-ddab-43e6-b737-3b818be23378",
@@ -484,14 +476,6 @@
                 "id": "6643fb62-c8a7-4293-ac60-f2f8154f97e8",
                 "resourcePath": "sprites\\s_healthdrop\\s_healthdrop.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "b8d7d982-b064-419a-932d-95ce70ecf475",
-            "Value": {
-                "id": "83efefae-68c3-4549-b3e1-ad79d34b929c",
-                "resourcePath": "objects\\o_walldeb\\o_walldeb.yy",
-                "resourceType": "GMObject"
             }
         },
         {
