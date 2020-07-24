@@ -70,8 +70,7 @@ if keyboard_check_pressed(ord("W")){var che;
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
 	
-audio_sound_gain(snd_blast1,0,3);
-audio_sound_gain(snd_blast2,0,3);
+
 
 
 if keyboard_check(ord("W")) and jetpack>0{
@@ -79,10 +78,10 @@ if keyboard_check(ord("W")) and jetpack>0{
 	che=-1;
 	che=choose(0,1);
 	if che ==0{audio_play_sound(snd_blast2,1,0);
-		audio_sound_gain(snd_blast2,.1,0);
+		audio_sound_gain(snd_blast2,random(.35),0);
 	audio_sound_gain(snd_blast2,0,2);}
 	if che==1{audio_play_sound(snd_blast1,1,0);
-		audio_sound_gain(snd_blast1,.1,0);
+		audio_sound_gain(snd_blast1,random(.35),0);
 	audio_sound_gain(snd_blast1,0,2);}
 	
 		if jetpack>0{vspd-=.4*random(3.96);jetpack-=1*random(22);
@@ -93,8 +92,9 @@ if keyboard_check(ord("W")) and jetpack>0{
 	}
 			}
 }
-
-
+if !keyboard_check(ord("W")){
+audio_sound_gain(snd_blast1,0,1);
+audio_sound_gain(snd_blast2,0,1);}
 //check for ground
 if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
     {

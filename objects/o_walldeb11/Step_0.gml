@@ -8,7 +8,7 @@ image_angle=direction;
 if place_meeting(x,y,obj_solid1){
 if vspeed>0{vspeed-=6;}hp-=.1*random(2);
 }
-vspeed+=5.1;instance_create_layer(x,y,"Instances",o_walldeb);
+vspeed+=5.1;
 if image_xscale<0{instance_destroy();}
 image_xscale-=.09*random(3);
 image_yscale=image_xscale;
