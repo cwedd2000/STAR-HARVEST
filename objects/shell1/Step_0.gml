@@ -40,3 +40,12 @@ if keyboard_check_pressed(ord("4")){
  instance_deactivate_object(o_P90);
 
 }
+if keyboard_check_pressed(ord("5")){
+
+ instance_deactivate_object(o_DesertE);
+ instance_deactivate_object(o_vector);
+ instance_deactivate_object(o_AK47);
+ instance_deactivate_object(o_P90);
+
+}
+
