@@ -5,7 +5,7 @@ grav = 1.2;dex =1;
 iron=0;
 randomise();
 spd = 10;grappled=0;
-hspd = 0;
+hspd = 0;image_speed=0;image_index=0;
 vspd = 0;
 jspd = 24;
 canjumpack=1;

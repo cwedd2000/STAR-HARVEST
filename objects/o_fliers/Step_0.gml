@@ -1,13 +1,18 @@
 
 //damage
-if place_meeting(x,y,obj_solid1){image_index=1;}
-if !place_meeting(x,y,obj_solid1){image_index=0;}
+g+=.1;
+if g>2{g=0;}
+image_blend=make_color_rgb(random_range(100,255),random_range(250,255),random_range(250,255));
+
 if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
-		hp-=(.1+.1*random(1.2));}
+		hp-=(.1+.1*random(1.2));image_xscale=random_range(1,2);
+image_yscale=image_xscale;}
 if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
-	hp-=random(6);
+	hp-=random(6);image_xscale=random_range(2,9);
+image_yscale=image_xscale;
 }
-if hp<0{image_alpha-=.2;if image_alpha<0{instance_destroy();}}
+if hp<0{image_xscale=random_range(1,2);
+image_yscale=image_xscale;image_alpha-=.2;if image_alpha<0{instance_destroy();}}
 /// movement
 
 if c<5{c+=.008;}

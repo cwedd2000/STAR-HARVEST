@@ -3,6 +3,7 @@
 audio_sound_gain(snd_blast1,0,2);
 audio_sound_gain(snd_blast2,0,2);
 if keyboard_check_pressed(ord("W")){var che;
+	if image_speed>0{image_speed=0;}
 	che=-1;
 	che=choose(0,1);
 	if che ==0{audio_sound_gain(snd_blast2,.2,2);audio_play_sound(snd_blast2,1,0);}
@@ -18,6 +19,7 @@ if keyboard_check_pressed(ord("W")){var che;
 
 
 if keyboard_check(ord("W")) and jetpack>0{
+	image_speed=1;
 	var che;
 	che=-1;
 	che=choose(0,1);
@@ -35,5 +37,6 @@ if keyboard_check(ord("W")) and jetpack>0{
 			}
 }
 if !keyboard_check(ord("W")){
+		if image_speed>0{image_speed-=.01;}
 audio_sound_gain(snd_blast1,0,1);
 audio_sound_gain(snd_blast2,0,1);}
