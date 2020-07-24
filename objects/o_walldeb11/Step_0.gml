@@ -5,7 +5,7 @@ if g<6{vspeed+=2.5;}
 if g>0{vspeed+=1.5;}
 
 image_angle=direction;
-if place_meeting(x,y,obj_solid1){
+if place_meeting(x,y,obj_solid1) or place_meeting(x,y,o_moon){ 
 if vspeed>0{vspeed-=10;}hp-=random(6.2);
 }
 direction=direction+random_range(-.5,.5);
