@@ -8,4 +8,4 @@ hspd = 0;
 vspd = 0;
 jspd = 20;
 
-hp=50;c=0;
+hp=random(90)+50;c=0;

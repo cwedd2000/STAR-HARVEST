@@ -7,4 +7,4 @@ hspd = 0;
 vspd = 0;
 jspd = 10+1*random(45);
 canshoot=1;
-hp=150;jkey=0;c=0;
+hp=250;jkey=0;c=0;

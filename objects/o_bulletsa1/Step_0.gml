@@ -14,6 +14,7 @@ image_angle=direction;
 var shot=instance_create_layer(x-lengthdir_x(speed,direction),y-lengthdir_y(speed,direction),"instances",obj_solid1);
 with(shot){image_blend=make_color_hsv(random(255),random_range(5,255),random_range(5,255));image_xscale=random(4.8);
 image_yscale=image_xscale;}
-var shot2=instance_create_layer(x+irandom_range(-10,10),y+irandom_range(-10,10),"instances",obj_solid1);
-with(shot2){image_blend=make_color_hsv(random(250),random_range(155,255),random_range(155,255));image_xscale=random(2.8);
+
+var shot3=instance_create_layer(x+irandom_range(-3,3)-lengthdir_x(speed,direction),y+irandom_range(-3,3)-lengthdir_y(speed,direction),"instances",obj_solid1);
+with(shot3){image_blend=make_color_hsv(random(255),random_range(155,255),random_range(155,255));image_xscale=random(3.8);
 image_yscale=image_xscale;}
