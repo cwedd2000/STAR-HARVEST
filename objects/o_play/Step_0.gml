@@ -28,7 +28,7 @@ if hspd>0{
 hspd-=1;}
 if hspd<0{
 hspd+=1;}
-
+image_blend=make_color_hsv(0,irandom_range(170,255),irandom_range(280,255));
 
 if grapple {instance_activate_object(o_grapple);}
 
