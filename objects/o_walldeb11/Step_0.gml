@@ -7,7 +7,7 @@ if g>0{vspeed+=1.5;}
 image_angle=direction;
 if place_meeting(x,y,obj_solid1) or place_meeting(x,y,o_moon){ 
 if vspeed>0{vspeed-=14;}hp-=random(5.5);
-}
+}image_blend=make_color_hsv(irandom_range(2,44),255,irandom_range(170,255));
 if x<o_play.x{x+=.7}if x>o_play.x{x-=.7}
 direction=direction+random_range(-2.5,2.5);
 if image_xscale<0{instance_destroy();}

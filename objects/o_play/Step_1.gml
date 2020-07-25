@@ -16,11 +16,13 @@ if keyboard_check_pressed(ord("W")){var che;
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
 	
+		if image_speed>0 and jetpack<0{image_speed-=.04;}
 
-
-
+		if image_speed>0{image_speed-=.005;}
 if keyboard_check(ord("W")) and jetpack>0{
-	if image_speed<2{image_speed+=0.007;}
+	if burn>50{burn=0;}
+	burn+=1;
+	if image_speed<2{image_speed+=0.009;}
 image_blend=make_color_rgb(255,irandom_range(0,255),255);
 	var che;
 	che=-1;
@@ -32,13 +34,14 @@ image_blend=make_color_rgb(255,irandom_range(0,255),255);
 		audio_sound_gain(snd_blast1,random(.21),0);
 	audio_sound_gain(snd_blast1,0,2);}
 	
-		if jetpack>0{vspd-=.3*random(4.36);jetpack-=1*random(22);
+		if jetpack>0{vspd-=.00005*random(1200)*burn;jetpack-=1*random(22);
 	
 		instance_create_layer(x,y,"instances1",o_walldeb1);
 	
 			}
 }
 if !keyboard_check(ord("W")){
+	burn=0;
 		if image_speed>0{image_speed-=.02;}
 audio_sound_gain(snd_blast1,0,1);
 audio_sound_gain(snd_blast2,0,1);}

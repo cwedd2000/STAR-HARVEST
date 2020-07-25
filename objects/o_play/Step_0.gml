@@ -54,7 +54,7 @@ if keyboard_check_pressed(ord("Z"))
         {
         window_set_fullscreen(true);}}
 		
-if ( (collision_circle(x,y,50,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<1000{
+if ( (collision_circle(x,y,50,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<9999{
 		jetpack+=20;
 }
 
