@@ -12,7 +12,7 @@
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 5,
-    "coltolerance": 0,
+    "coltolerance": 30,
     "edgeFiltering": false,
     "frames": [
         {
