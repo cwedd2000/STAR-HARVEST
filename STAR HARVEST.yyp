@@ -58,7 +58,7 @@
             "Key": "0984e2d7-5b5a-4e0f-a6ec-be8cb90d5fb7",
             "Value": {
                 "id": "ca716771-beac-4a47-9b13-27781436e07b",
-                "resourcePath": "objects\\planetspawner\\planetspawner.yy",
+                "resourcePath": "objects\\enemspawn\\enemspawn.yy",
                 "resourceType": "GMObject"
             }
         },

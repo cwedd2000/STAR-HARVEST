@@ -2,7 +2,7 @@
     "id": "0984e2d7-5b5a-4e0f-a6ec-be8cb90d5fb7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "planetspawner",
+    "name": "enemspawn",
     "eventList": [
         {
             "id": "21d14449-51f8-4bed-8e02-bfaf5055e1e6",

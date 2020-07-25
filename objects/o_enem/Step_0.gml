@@ -1,5 +1,8 @@
 
 //damage
+
+if distance_to_object(o_play)>2300{image_alpha-=.2;if image_alpha<0{instance_destroy();}}
+
 if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
 		hp-=(.1+.5*random(1.2));}
 if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){

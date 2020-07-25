@@ -8,7 +8,8 @@ image_angle=direction;
 if place_meeting(x,y,obj_solid1) or place_meeting(x,y,o_moon){ 
 if vspeed>0{vspeed-=14;}hp-=random(5.5);
 }
-direction=direction+random_range(-.5,.5);
+if x<o_play.x{x+=.7}if x>o_play.x{x-=.7}
+direction=direction+random_range(-2.5,2.5);
 if image_xscale<0{instance_destroy();}
 image_xscale-=.02*random(3);
 image_yscale=image_xscale;
