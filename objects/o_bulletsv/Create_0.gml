@@ -8,6 +8,6 @@ hp=2.8;
 
 image_xscale=.8;
 image_yscale=image_xscale;	
-audio_play_sound(snd_shoot,10,0);
-audio_sound_gain(snd_shoot,.07,0);
+audio_play_sound(snd_shoot,1,0);
+audio_sound_gain(snd_shoot,.05,0);
 audio_sound_gain(snd_shoot,0,56);

@@ -17,8 +17,8 @@ if collision_circle(x,y,25,o_fliers,1,1){hp-=random(.3);image_blend=make_color_h
 if hp<0{instance_destroy();}
 
 if place_meeting(x,y,o_walldeb1){
-		hp-=(.2+.5*random(3.2))*other.image_xscale;image_blend=make_color_hsv(random(8),irandom_range(130,255),irandom_range(170,255));
+		hp-=(.2+.5*random(3.2))*other.image_xscale;image_blend=make_color_hsv(random(8),irandom_range(90,255),irandom_range(100,255));
 }
 if place_meeting(x,y,o_walldeb11){
-	hp-=(.2+.7*random(2.5))*other.image_xscale;image_blend=make_color_hsv(irandom_range(1,30),irandom_range(130,255),irandom_range(170,255));	
+	hp-=(.2+.7*random(2.5))*other.image_xscale;image_blend=make_color_hsv(irandom_range(0,30),irandom_range(30,255),irandom_range(60,255));	
 }

@@ -17,4 +17,5 @@ image_yscale=image_xscale;}
 
 var shot3=instance_create_layer(x+irandom_range(-3,3)-lengthdir_x(speed,direction),y+irandom_range(-3,3)-lengthdir_y(speed,direction),"instances",obj_solid1);
 with(shot3){image_blend=make_color_hsv(random(255),random_range(155,255),random_range(155,255));image_xscale=random(3.8);
-image_yscale=image_xscale;}
+image_yscale=image_xscale;audio_play_sound(snd_shoot,4,0);audio_sound_gain(snd_shoot,.02,0);
+audio_sound_gain(snd_shoot,0,25);}
