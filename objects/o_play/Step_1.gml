@@ -21,7 +21,7 @@ if keyboard_check_pressed(ord("W")){var che;
 
 if keyboard_check(ord("W")) and jetpack>0{
 	if image_speed<2{image_speed+=0.007;}
-image_blend=make_color_hsv(0,255,irandom_range(2,255));
+image_blend=make_color_rgb(255,irandom_range(0,255),255);
 	var che;
 	che=-1;
 	che=choose(0,1);
