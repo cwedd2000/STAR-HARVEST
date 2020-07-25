@@ -4,8 +4,8 @@
 	chance1=-1;
 	chance1=choose(0,1);
 	if chance1 == 0{
-		hp-=.5;
+		hp-=2.15;
     direction = direction + irandom_range(0, 15);}
    if chance1 == 1{
-	   hp-=.9;
+	   hp-=1.9;
 	direction = direction - irandom_range(0, 15);}

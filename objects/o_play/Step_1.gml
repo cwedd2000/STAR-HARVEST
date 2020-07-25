@@ -20,7 +20,7 @@ if keyboard_check_pressed(ord("W")){var che;
 
 
 if keyboard_check(ord("W")) and jetpack>0{
-	if image_speed<1{image_speed+=0.01;}
+	if image_speed<2{image_speed+=0.007;}
 
 	var che;
 	che=-1;

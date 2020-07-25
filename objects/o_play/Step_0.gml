@@ -20,7 +20,7 @@ var restart = keyboard_check(ord("R"));
 if restart{game_restart();}
 
 if place_meeting(x,y,o_bulletsenem){playhp-=random(.7);}
-if collision_circle(x,y,85,o_fliers,1,1){playhp-=.35;}
+
 if playhp<0{game_restart();}
 
 

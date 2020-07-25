@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_angle=direction;
+if image_xscale>1{image_xscale-=.1;}if image_yscale>1{image_yscale-=.1;}
 if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
 	hp-=(3+2*random(4));image_blend=make_color_hsv(10,irandom_range(180,215),irandom_range(70,255));
 
