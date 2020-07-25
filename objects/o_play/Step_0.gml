@@ -34,7 +34,7 @@ if grapple {instance_activate_object(o_grapple);}
 
 if ungrapple {instance_deactivate_object(o_grapple);grappled=0;hook=0;}
 
-if instance_exists(o_gpoint) and grappled !=0 and hook !=0 and !collision_circle(x,y,60,o_moon,1,1){
+if instance_exists(o_gpoint) and grappled !=0 and hook !=0 and !collision_circle(x,y,90,o_moon,1,1){
 	if hook.speed==0 {
 		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,33,1);}
 	    if keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,34,0);}

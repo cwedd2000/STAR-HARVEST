@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-chi=choose(0,1,3,3,3,2,2);
+chi=choose(0,1,2,2);
 xa=0;
 ya=0;
 xa=irandom_range(-9000,9000);
