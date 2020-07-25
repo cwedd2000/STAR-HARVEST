@@ -17,9 +17,9 @@ if hp<0{image_xscale=random_range(1,5);
 image_yscale=image_xscale;image_alpha-=.2;if image_alpha<0{instance_destroy();}}
 /// movement
 
-if c<5{c+=.008;}
+if c<2.5{c+=.0001;}
 
-if distance_to_object(o_play)<1900{mp_potential_step(o_play.x,o_play.y,1+1*c,1);}
+if distance_to_object(o_play)<1900{mp_potential_step(o_play.x,o_play.y,.5+c,1);}
 
 
 //shooting
