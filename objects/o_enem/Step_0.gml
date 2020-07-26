@@ -29,7 +29,7 @@ image_yscale=image_xscale;}
 image_yscale=image_xscale;
 if c<4.3{c+=.05;}
 if distance_to_object(o_play) < 120 and c>.01{c-=.01;}
-if distance_to_object(o_play)<1900{image_angle=direction;direction=point_direction(x,y,o_play.x,o_play.y);mp_potential_step(o_play.x,o_play.y,(.7+c),1);}
+if distance_to_object(o_play)<1900{direction=point_direction(x,y,o_play.x,o_play.y);mp_potential_step(o_play.x,o_play.y,(.7+c),1);}
 
 if distance_to_object(o_play)<300 and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1){
 	

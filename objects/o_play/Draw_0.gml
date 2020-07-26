@@ -157,11 +157,11 @@ else{draw_text_color(x+40,y-36,jetpack,c_aqua,c_aqua,c_aqua,c_aqua,1);
 	if dex>300 and dex <600 {
 		draw_text_color(x-350,y-190,"Special Agent:",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		draw_text_color(x-350,y-160,ra,c_yellow,c_yellow,c_yellow,c_yellow,1);
-		draw_text_color(x-350,y-120,"- HOLD W - Use your rocket accelerator - You may want to drill a hole and shelter inside that station below you, it'll funnel the incoming swarm of hostiles into your tunnel then press 1-4 to toggle between weapons and 5 to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);}
+		draw_text_color(x-350,y-120,"- PULSE W - Use your rocket accelerator - You may want to drill a hole and shelter inside that station below you,\nit'll funnel the incoming swarm of hostiles into your tunnel then press 1-4 to toggle between weapons and 5 to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);}
 	if dex>600 and dex <1000 {
 		draw_text_color(x-350,y-190,"Special Agent:",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		draw_text_color(x-350,y-160,da,c_yellow,c_yellow,c_yellow,c_yellow,1);
-		draw_text_color(x-350,y-120,"- HOLD W - Use your rocket accelerator - You may want to drill a hole and shelter inside that station below you, it'll funnel the incoming swarm of hostiles into your tunnel then press 1-4 to toggle between weapons and 5 to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);}
+		draw_text_color(x-350,y-120,"- PULSE W - Use your rocket accelerator - You may want to drill a hole and shelter inside that station below you,\nit'll funnel the incoming swarm of hostiles into your tunnel then press 1-4 to toggle between weapons and 5 to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);}
 
 	if dex<300{
 		draw_text_color(x-350,y-320,"Right Click or F using an AK47 to fire GooWall Rounds\nLeft Click to Shoot\nA/D to move\nSpace to Jump and Double jump\n Press and HOLD E To launch grappling hook *Tip:Pull rope down to Ascend or hold Space_bar when hooked.\nPress ESC to Quit\nPress R to Restart.\n Z to alternate fullscreen/windowed ",c_yellow,c_yellow,c_yellow,c_yellow,1);}}

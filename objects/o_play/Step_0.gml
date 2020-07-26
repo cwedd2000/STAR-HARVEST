@@ -137,19 +137,24 @@ if (place_meeting(x+hspd, y, o_planet))
     }
 //move horizontally
 x += hspd;
+
 // vertical collision
 if (place_meeting(x, y+vspd, obj_solid1))
     {
+		if (vspd)>0{
     while (!place_meeting(x, y+sign(vspd), obj_solid1)){
     y += sign(vspd);}
-    vspd = 0;
+    vspd = 0;}
     }
+
+    
 if (place_meeting(x, (y+vspd), o_moon))
     {
     while (!place_meeting(x, (y+sign(vspd)), o_moon)){
     y += sign(vspd);}
     vspd = 0;
     }
+	
 if (place_meeting(x, y+vspd, o_planet))
     {
     while (!place_meeting(x, y+sign(vspd), o_planet)){
