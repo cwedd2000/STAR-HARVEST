@@ -28,10 +28,20 @@ image_yscale=image_xscale;}
 
 image_yscale=image_xscale;
 if c<4.3{c+=.05;}
-if distance_to_object(o_play) < 120 and c>.01{c-=.001;}
+if distance_to_object(o_play) < 120 and c>.01{c-=.01;}
 if distance_to_object(o_play)<1900{image_angle=direction;direction=point_direction(x,y,o_play.x,o_play.y);mp_potential_step(o_play.x,o_play.y,(.7+c),1);}
 
-if distance_to_object(o_play)<300 and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1){if image_xscale<6{image_xscale+=random(.02);}hp+=random(3);}
+if distance_to_object(o_play)<300 and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1){
+	
+xa=0;
+ya=0;
+chi=choose(0,2,1,2);
+xa=x;
+ya=y;
+xa=xa+irandom_range(-400,400);
+ya=xa+irandom_range(-400,400);
+if xa!=0 and ya!=0 and chi==1 and !collision_circle(xa,ya,9,obj_solid1,1,1) and !collision_circle(xa,ya,60,o_play,1,1) and !collision_circle(xa,ya,90,o_moon,1,1) and !collision_circle(xa,ya,90,o_enem,1,1)and !collision_circle(xa,ya,90,o_fliers,1,1){instance_create_layer(xa,ya,"instances",o_fliers);}
+	if image_xscale<6{image_xscale+=random(.02);}hp+=random(3);}
 //shooting
 if image_xscale>1.3{image_xscale-=.008;}
 

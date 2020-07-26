@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "87d86152-026b-4f1c-b7b9-d023829f9c45",
+            "Value": {
+                "id": "34f9a684-dc20-4447-aa44-3b4dff6097fa",
+                "resourcePath": "sprites\\s_wizardblast\\s_wizardblast.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89643545-c233-42c0-a56e-7d7682707f2d",
             "Value": {
                 "id": "e99008ae-e90f-457d-98c7-cee8aac63621",

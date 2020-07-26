@@ -4,7 +4,8 @@
 grav = 1.2;randomise();g=0;
 spd = 8;image_xscale=random_range(1,1.5);
 image_yscale=image_xscale;
-
+xa=0;
+ya=0;
 hspd = 0;
 vspd = 0;
 jspd = 20;
