@@ -14,6 +14,9 @@ if collision_circle(x,y,18,o_play,1,1){hp-=random(.4);image_blend=make_color_hsv
 
 if collision_circle(x,y,28,o_fliers,1,1){hp-=random(.3);image_blend=make_color_hsv(random(5),irandom_range(130,255),irandom_range(170,255));}
 
+
+if collision_circle(x,y,28,o_enem,1,1){hp-=random(.3);image_blend=make_color_hsv(random(5),irandom_range(130,255),irandom_range(170,255));}
+
 if hp<0{instance_destroy();}
 
 if place_meeting(x,y,o_walldeb1){

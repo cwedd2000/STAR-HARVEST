@@ -9,5 +9,5 @@ hspd = 0;
 vspd = 0;
 jspd = 20;
 image_angle=direction;
-
+sprite_index=s_wizard;
 hp=random(90)+50;c=0;
