@@ -24,134 +24,133 @@ else{draw_text_color(x+40,y-36,jetpack,c_aqua,c_aqua,c_aqua,c_aqua,1);
 "Shonda Leer",
 "Brock Lee",
 "Maya Didas",
-)
-//Rick O'Shea
-Pete Sariya"
-Monty Carlo"
-Sal Monella"
-Sue Vaneer"
-Cliff Hanger"
-Barb Dwyer"
-Terry Aki"
-Cory Ander"
-Robin Banks"
-Jimmy Changa"
-Barry Wine"
-Wilma Mumduya"
-Buster Hyman"
-Poppa Cherry"
-Zack Lee"
-Don Stairs"
-Saul T. Balls"
-Peter Pants"
-Hal Appeno"
-Otto Matic"
-Moe Fugga"
-Graham Cracker"
-Tom Foolery"
-Al Dente"
-Bud Wiser"
-Polly Tech"
-Holly Graham"
-Frank N. Stein"
-Cam L. Toe"
-Pat Agonia"
-Tara Zona"
-Barry Cade"
-Phil Anthropist"
-Marvin Gardens"
-Phil Harmonic"
-Arty Ficial"
-Will Power"
-Donatella Nobatti"
-Juan Annatoo"
-Stew Gots"
-Anna Rexia"
-Bill Emia"
-Curt N. Call"
-Max Emum"
-Minnie Mum"
-Bill Yerds"
-Hap E. Birthday"
-Matt Innae"
-Polly Science"
-Tara Misu"
-Ed U. Cation"
-Gerry Atric"
-Kerry Oaky"
-Midge Itz"
-Gabe Lackmen"
-Mary Christmas"
-Dan Druff"
-Jim Nasium"
-Angie O. Plasty"
-Ella Vator"
-Sal Vidge"
-Bart Ender"
-Artie Choke"
-Hans Olo"
-Marge Arin"
-Hugh Briss"
-Gene Poole"
-Ty Tanic"
-Manuel Labor"
-Lynn Guini"
-Claire Voyant"
-Peg Leg"
-Jack E. Sack"
-Marty Graw"
-Ash Wednesday"
-Olive Yu"
-Gene Jacket"
-Tom Atoe"
-Doug Out"
-Sharon Needles"
-Beau Tie"
-Serj Protector"
-Marcus Down"
-Warren Peace"
-Bud Jet"
-Barney Cull"
-Marion Gaze"
-Eric Shun"
-Mal Practice"
-Ed Itorial"
-Rick Shaw"
-Paul Issy"
-Ben Effit"
-Kat E. Gory"
-Justin Case"
-Louie Z. Ana"
-Aaron Ottix"
-Ty Ballgame"
-Anne Fibbiyon"
-Barry Cuda"
-John Withawind"
-Joe Thyme"
-Mary Goround"
-Marge Arita"
-Frank Senbeans"
-Bill Dabear"
-Ray Zindaroof"
-Adam Zapple"
-Lewis N. Clark"
-Matt Schtick"
-Sue Shee"
-Chris P. Bacon"
-Doug Lee Duckling"
-Mason Protesters"
-Sil Antro"
-Cal Orie"
-Sara Bellum"
-"Al Acart"
-"Marv Ellis"
-"Evan Shlee"
-"Terry Bull"
-"Mort Ission"
-"Mark Ette"
-"Ken Tucky"
-"Louis Ville"
-"Colin Oscopy"
+"Rick O'Shea",
+"Pete Sariya",
+"Monty Carlo",
+"Sal Monella",
+"Sue Vaneer",
+"Cliff Hanger",
+"Barb Dwyer",
+"Terry Aki",
+"Cory Ander",
+"Robin Banks",
+"Jimmy Changa",
+"Barry Wine",
+"Wilma Mumduya",
+"Buster Hyman",
+"Poppa Cherry",
+"Zack Lee",
+"Don Stairs",
+"Saul T. Balls",
+"Peter Pants",
+"Hal Appeno",
+"Otto Matic",
+"Moe Fugga",
+"Graham Cracker",
+"Tom Foolery",
+"Al Dente",
+"Bud Wiser",
+"Polly Tech",
+"Holly Graham",
+"Frank N. Stein",
+"Cam L. Toe",
+"Pat Agonia",
+"Tara Zona",
+"Barry Cade",
+"Phil Anthropist",
+"Marvin Gardens",
+"Phil Harmonic",
+"Arty Ficial",
+"Will Power",
+"Donatella Nobatti",
+"Juan Annatoo",
+"Stew Gots",
+"Anna Rexia",
+"Bill Emia",
+"Curt N. Call",
+"Max Emum",
+"Minnie Mum",
+"Bill Yerds",
+"Hap E. Birthday",
+"Matt Innae",
+"Polly Science",
+"Tara Misu",
+"Ed U. Cation",
+"Gerry Atric",
+"Kerry Oaky",
+"Midge Itz",
+"Gabe Lackmen",
+"Mary Christmas",
+"Dan Druff",
+"Jim Nasium",
+"Angie O. Plasty",
+"Ella Vator",
+"Sal Vidge",
+"Bart Ender",
+"Artie Choke",
+"Hans Olo",
+"Marge Arin",
+"Hugh Briss",
+"Gene Poole",
+"Ty Tanic",
+"Manuel Labor",
+"Lynn Guini",
+"Claire Voyant",
+"Peg Leg",
+"Jack E. Sack",
+"Marty Graw",
+"Ash Wednesday",
+"Olive Yu",
+"Gene Jacket",
+"Tom Atoe",
+"Doug Out",
+"Sharon Needles",
+"Beau Tie",
+"Serj Protector",
+"Marcus Down",
+"Warren Peace",
+"Bud Jet",
+"Barney Cull",
+"Marion Gaze",
+"Eric Shun",
+"Mal Practice",
+"Ed Itorial",
+"Rick Shaw",
+"Paul Issy",
+"Ben Effit",
+"Kat E. Gory",
+"Justin Case",
+"Louie Z. Ana",
+"Aaron Ottix",
+"Ty Ballgame",
+"Anne Fibbiyon",
+"Barry Cuda",
+"John Withawind",
+"Joe Thyme",
+"Mary Goround",
+"Marge Arita",
+"Frank Senbeans",
+"Bill Dabear",
+"Ray Zindaroof",
+"Adam Zapple",
+"Lewis N. Clark",
+"Matt Schtick",
+"Sue Shee",
+"Chris P. Bacon",
+"Doug Lee Duckling",
+"Mason Protesters",
+"Sil Antro",
+"Cal Orie",
+"Sara Bellum",
+"Al Acart",
+"Marv Ellis",
+"Evan Shlee",
+"Terry Bull",
+"Mort Ission",
+"Mark Ette",
+"Ken Tucky",
+"Louis Ville",
+"Colin Oscopy",
 "Fred Attchini",
 "Al Fredo")
 	if dex>350 and dex <600 {
