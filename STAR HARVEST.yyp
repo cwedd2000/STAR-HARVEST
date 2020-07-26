@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "20bb45b4-0cc3-470b-bffb-a2b8354bcadd",
+            "Value": {
+                "id": "4975abf4-d3ca-4450-a943-19b2862c3257",
+                "resourcePath": "sprites\\s_wizarddeath\\s_wizarddeath.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "256e2be6-92c7-448c-bdb8-1cec8ec9fb7a",
             "Value": {
                 "id": "6b5c4984-ddab-43e6-b737-3b818be23378",

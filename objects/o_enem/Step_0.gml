@@ -22,14 +22,14 @@ image_yscale=image_xscale;}
 if hp<0{image_xscale=random_range(1,5);
 image_yscale=image_xscale;image_alpha-=.2;if image_alpha<0{instance_destroy();}}
 /// movement
-
+image_yscale=image_xscale;
 if c<5.3{c+=.0022;}
 if distance_to_object(o_play) < 120 and c>.01{c-=.001;}
 if distance_to_object(o_play)<1900{image_angle=direction;direction=point_direction(x,y,o_play.x,o_play.y);mp_potential_step(o_play.x,o_play.y,(.7+c),1);}
 
-if distance_to_object(o_play)<300 and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1){hp+=random(5);}
+if distance_to_object(o_play)<300 and !collision_line(x,y,o_play.x,o_play.y,obj_solid1,1,1){if image_xscale<6{image_xscale+=random(.02);}hp+=random(3);}
 //shooting
-
+if image_xscale>1.3{image_xscale-=.008;}
 if collision_circle(x,y,60,o_play,1,1){playhp-=.13;}
 // Horizontal collision
 if (place_meeting(x+hspd, y, obj_solid1))
