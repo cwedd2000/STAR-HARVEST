@@ -16,3 +16,4 @@ hook=0;
 jetpack=10000;
 
 
+ra = 0 ;

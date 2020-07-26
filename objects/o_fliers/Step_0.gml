@@ -12,7 +12,7 @@ if collision_circle(x,y,100,obj_solid1,1,1){if image_xscale<9{image_xscale+=rand
 image_yscale=image_xscale;}sprite_index=s_enem11;}
 
 
-if image_xscale<6{image_xscale+=random_range(.0001,.003);
+if image_xscale<8{image_xscale+=random_range(.0001,.003);
 image_yscale=image_xscale;}
 
 

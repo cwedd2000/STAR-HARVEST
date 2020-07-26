@@ -6,7 +6,7 @@ else{draw_text_color(x+40,y-36,jetpack,c_aqua,c_aqua,c_aqua,c_aqua,1);
 	draw_text_color(x+40,y-50,playhp,c_white,c_white,c_white,c_white,1);
 	draw_text_color(x+40,y-20,max(-y),c_yellow,c_yellow,c_yellow,c_yellow,1);
 	draw_text_color(x-100,y-40,iron,c_yellow,c_yellow,c_yellow,c_yellow,1);
-	var ra = 0 ;
+
 	ra = choose("Mario Speedwagon",
 "Petey Cruiser",
 "Anna Sthesia",
@@ -152,12 +152,13 @@ else{draw_text_color(x+40,y-36,jetpack,c_aqua,c_aqua,c_aqua,c_aqua,1);
 "Louis Ville",
 "Colin Oscopy",
 "Fred Attchini",
-"Al Fredo")
-	if dex>350 and dex <600 {
-		draw_text_color(x-350,y-320,"Special Agent: ",c_yellow,c_yellow,c_yellow,c_yellow,1);
-		draw_text_color(x-350,y-320,"Special Agent: ",c_yellow,c_yellow,c_yellow,c_yellow,1);}
+"Al Fredo");
+	if dex>300 and dex <600 {
+		draw_text_color(x-350,y-190,"Special Agent: ",c_yellow,c_yellow,c_yellow,c_yellow,1);
+		draw_text_color(x-350,y-160,ra,c_yellow,c_yellow,c_yellow,c_yellow,1);
+		draw_text_color(x-350,y-120,"- # HOLD W # -Use your rocket accelerator and drill a goddamn hole into that station below you NOW!%$!#.....",c_yellow,c_yellow,c_yellow,c_yellow,1);}
 
 	if dex<300{
-		draw_text_color(x-350,y-320,"Toggle between firearms using numbers 1-4\nPress number 5 to holster weapon\nRight Click or F using an AK47 to fire GooWall Rounds\nLeft Click to Shoot\nA/D to move\nW to Rocket Boost\nSpace to Jump and Double jump\nJetpack refills on ground and planets\nShooting planets will drop healthpacks\nE To launch grappling hook *Tip:Pull rope down to Ascend or hold Space_bar.\nPress ESC to Quit\nPress R to Restart.\nZ to alternate fullscreen/windowed",c_yellow,c_yellow,c_yellow,c_yellow,1);}}
+		draw_text_color(x-350,y-320,"Toggle between firearms using numbers 1-4\nPress number 5 to holster weapon\nRight Click or F using an AK47 to fire GooWall Rounds\nLeft Click to Shoot\nA/D to move\nSpace to Jump and Double jump\n Press and HOLD E To launch grappling hook *Tip:Pull rope down to Ascend or hold Space_bar when hooked.\nPress ESC to Quit\nPress R to Restart.\n Z to alternate fullscreen/windowed ",c_yellow,c_yellow,c_yellow,c_yellow,1);}}
 
 if instance_exists(o_grapple) and instance_exists(o_gpoint) and hook !=0 and grappled!=0 {draw_line_width_color(o_grapple.x,o_grapple.y,hook.x,hook.y,7,c_white,c_white);}
