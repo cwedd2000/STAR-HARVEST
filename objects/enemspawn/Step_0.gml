@@ -9,4 +9,4 @@ xa=x;
 ya=y;
 xa=xa+irandom_range(-4000,4000);
 ya=xa+irandom_range(-4000,4000);
-if xa!=0 and ya!=0 and chi==1 and !collision_circle(xa,ya,90,obj_solid1,1,1) and !collision_circle(xa,ya,390,o_play,1,1) and !collision_circle(xa,ya,190,o_moon,1,1) and !collision_circle(xa,ya,20,o_enem,1,1)and !collision_circle(xa,ya,20,o_fliers,1,1){instance_create_layer(xa,ya,"instances",o_fliers);}
+if xa!=0 and ya!=0 and chi==1 and !collision_circle(xa,ya,190,obj_solid1,1,1) and !collision_circle(xa,ya,390,o_play,1,1) and !collision_circle(xa,ya,190,o_moon,1,1) and !collision_circle(xa,ya,20,o_enem,1,1)and !collision_circle(xa,ya,20,o_fliers,1,1){instance_create_layer(xa,ya,"instances",o_fliers);}

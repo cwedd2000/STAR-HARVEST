@@ -11,7 +11,7 @@ if g>2{g=0;}
 
 
 
-if collision_circle(x,y,95,o_play,1,1){playhp-=random(.4);}
+if collision_circle(x,y,95,o_play,1,1){playhp-=random(.2);}
 
 
 if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
@@ -38,9 +38,9 @@ ya=0;
 chi=choose(0,1);
 xa=x;
 ya=y;
-xa=xa+irandom_range(-200,200);
-ya=xa+irandom_range(-200,200);
-if xa!=0 and ya!=0 and chi==1 and !collision_circle(xa,ya,9,obj_solid1,1,1) and !collision_circle(xa,ya,60,o_play,1,1) and !collision_circle(xa,ya,90,o_moon,1,1) and !collision_circle(xa,ya,20,o_enem,1,1)and !collision_circle(xa,ya,9,o_fliers,1,1){instance_create_layer(xa,ya,"instances",o_fliers);}
+xa=xa+irandom_range(-500,500);
+ya=xa+irandom_range(-500,500);
+if xa!=0 and ya!=0 and chi==1 and !collision_circle(xa,ya,19,obj_solid1,1,1) and !collision_circle(xa,ya,16,o_play,1,1) and !collision_circle(xa,ya,90,o_moon,1,1) and !collision_circle(xa,ya,20,o_enem,1,1)and !collision_circle(xa,ya,9,o_fliers,1,1){instance_create_layer(xa,ya,"instances",o_fliers);}
 	if image_xscale<6{image_xscale+=random(.02);}hp+=random(3);}
 //shooting
 if image_xscale>1.3{image_xscale-=.008;}
