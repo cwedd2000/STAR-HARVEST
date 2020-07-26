@@ -80,14 +80,14 @@ if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
 else
 {
 //gravity
-if (vspd < 17)
+if (vspd < 14)
     {
     vspd += grav;
     }
 	//double jump
 
 }
-  if !place_meeting(x, y+random(3), obj_solid1) and !place_meeting(x, y+random(3), o_moon) and (jkey) and canjumpack and jetpack>0
+  if !place_meeting(x, y+2, obj_solid1) and !place_meeting(x, y+2, o_moon) and (jkey) and canjumpack and jetpack>0
         {
         vspd = -jspd/1.2;
 		canjumpack=0;

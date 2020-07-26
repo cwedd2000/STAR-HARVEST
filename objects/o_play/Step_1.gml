@@ -20,8 +20,8 @@ if keyboard_check_pressed(ord("W")){var che;
 
 		if image_speed>0{image_speed-=.005;}
 if keyboard_check(ord("W")) and jetpack>0{
-	if burn>12{burn=0;}
-	burn+=.4;
+	if burn>9{burn=0;}
+	burn+=.02+random(.08);
 	if image_speed<2{image_speed+=0.009;}
 image_blend=make_color_rgb(255,irandom_range(0,255),255);
 	var che;
