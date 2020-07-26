@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "4efcfc4d-e98a-45d9-b7f2-64c7cf64e010",
+            "Value": {
+                "id": "2f3ab604-ece1-430e-8b84-3a21b69504b0",
+                "resourcePath": "sprites\\s_enem11\\s_enem11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "532c8744-0c3e-4fdf-8417-583ab16931e5",
             "Value": {
                 "id": "5b2d91dc-b6e8-46d7-ba13-b8d9c5a8a7a9",
@@ -602,7 +610,7 @@
             "Key": "f0aa7409-03b7-4880-a711-37927527c56d",
             "Value": {
                 "id": "8745f090-8e4e-42e2-b597-1048447fd16e",
-                "resourcePath": "sprites\\s_enem\\s_enem.yy",
+                "resourcePath": "sprites\\s_wizard\\s_wizard.yy",
                 "resourceType": "GMSprite"
             }
         },

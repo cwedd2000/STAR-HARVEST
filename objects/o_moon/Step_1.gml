@@ -9,7 +9,8 @@ if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeti
 }
 if place_meeting(x+2*lengthdir_x(speed,direction),y+2*lengthdir_y(speed,direction),obj_solid1){if speed>0{speed-=random(2.2);}}
 if place_meeting(x,y,obj_solid1){if speed>0{speed-=3.6;}}
-if place_meeting(x,y,o_moon){if speed>0{speed=0;}}if place_meeting(x,y,o_play){if speed>0{speed=0;}}
+if place_meeting(x,y,o_moon){speed=0;}
+if place_meeting(x,y,o_play){speed=0;}
 
-if hp<0{image_alpha-=.6;if image_alpha<0{instance_destroy();}}
+
 image_angle=direction;

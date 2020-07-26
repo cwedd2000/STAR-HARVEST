@@ -4,6 +4,11 @@ if distance_to_object(o_play)>2300{image_alpha-=.2;if image_alpha<0{instance_des
 //damage
 g+=.1;
 if g>2{g=0;}
+if place_meeting(x, y+random(3), obj_solid1){
+	sprite_index=s_enem11;
+}
+sprite_index=s_enem1;
+
 image_blend=make_color_rgb(random_range(100,255),random_range(250,255),random_range(250,255));
 
 if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
@@ -19,7 +24,7 @@ if hp<0{image_xscale=random_range(1,5);
 image_yscale=image_xscale;image_alpha-=.2;if image_alpha<0{instance_destroy();}}
 /// movement
 
-if c<6.3{c+=.0035;}
+if c<5.3{c+=.0032;}
 
 if distance_to_object(o_play)<1900{mp_potential_step(o_play.x,o_play.y,.7+c,1);}
 

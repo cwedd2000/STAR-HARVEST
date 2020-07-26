@@ -55,10 +55,19 @@ if keyboard_check_pressed(ord("Z"))
         window_set_fullscreen(true);}}
 		
 if ( (collision_circle(x,y,50,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<9999{
-		jetpack+=20;
+		jetpack+=30;
 }
 
 //check for ground
+if (place_meeting(x, y+1, o_moon) and grappled ==0)
+    {
+    vspd = 0;
+    //jumping
+    if (jkey) 
+        {
+        vspd = -jspd;
+        }
+    }
 if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
     {
     vspd = 0;

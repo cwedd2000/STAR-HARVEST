@@ -2,7 +2,7 @@
     "id": "f0aa7409-03b7-4880-a711-37927527c56d",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_enem",
+    "name": "s_wizard",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -11,7 +11,7 @@
     "bbox_right": 63,
     "bbox_top": 0,
     "bboxmode": 0,
-    "colkind": 3,
+    "colkind": 5,
     "coltolerance": 72,
     "edgeFiltering": false,
     "frames": [
