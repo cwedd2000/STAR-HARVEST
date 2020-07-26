@@ -71,16 +71,18 @@ if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
 else
 {
 //gravity
-if (vspd < 15)
+if (vspd < 17)
     {
     vspd += grav;
     }
 	//double jump
-  if (jkey) and canjumpack and jetpack>0
+
+}
+  if !place_meeting(x, y+random(3), obj_solid1) and !place_meeting(x, y+random(3), o_moon) and (jkey) and canjumpack and jetpack>0
         {
         vspd = -jspd/1.2;
 		canjumpack=0;
-		alarm[0]=58;
+		alarm[0]=43;
 			if jetpack>0{jetpack-=100;}
 			var counter;
 	counter=irandom_range(2,8);
@@ -88,8 +90,6 @@ if (vspd < 15)
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}
         }
-}
-
 
 
 // moving right
