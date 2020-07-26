@@ -8,5 +8,6 @@ sprite_index=s_enem1;
 hspd = 0;
 vspd = 0;
 jspd = 20;
+
 image_blend=make_color_rgb(irandom_range(0,255),irandom_range(0,255),irandom_range(0,255));
 hp=random(90)+50;c=0;
