@@ -7,8 +7,8 @@
     "HTile": false,
     "VTile": false,
     "bbox_bottom": 4,
-    "bbox_left": -3,
-    "bbox_right": 14,
+    "bbox_left": 0,
+    "bbox_right": 13,
     "bbox_top": 0,
     "bboxmode": 2,
     "colkind": 5,
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 9,
+    "origin": 4,
     "originLocked": false,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
@@ -65,6 +65,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 11,
-    "xorig": 6,
+    "xorig": 5,
     "yorig": 2
 }

@@ -14,8 +14,8 @@ var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
 camera_set_view_mat(camera,vm);
 t+=.01;
 
-if xas<1920{xas+=t;}
-if yas<1200{yas+=t;}
+if xas<1280{xas+=t;}
+if yas<720{yas+=t;}
 
 
 var pm = matrix_build_projection_ortho(xas,yas,1,10000);
