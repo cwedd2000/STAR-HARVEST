@@ -11,7 +11,7 @@ if keyboard_check_pressed(ord("W")){var che;
 	if che==1{audio_sound_gain(snd_blast1,.2,2);audio_play_sound(snd_blast1,1,0);}
 	if jetpack>0 and vspd{vspd-=6*random(1.3);jetpack-=1*random(9);}
 	var counter1;	
-	counter1=irandom_range(1,2);
+	counter1=irandom_range(3,8);
 	for (var i=0;i<counter1;i++){
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
@@ -35,7 +35,7 @@ image_blend=make_color_rgb(255,irandom_range(0,255),255);
 	audio_sound_gain(snd_blast1,0,2);}
 	
 		if jetpack>0{vspd-=.01*random(60)*burn;jetpack-=1*random(22);
-	
+
 		instance_create_layer(x,y,"instances1",o_walldeb1);
 	
 			}
