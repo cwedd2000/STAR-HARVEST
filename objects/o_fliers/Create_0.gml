@@ -3,7 +3,7 @@
 ///INITIALISE VARIABLES
 grav = 1.2;randomise();g=0;
 spd = 8;
-
+instance_create_layer(x,y,"instances",o_gleb);
 hspd = 0;
 vspd = 0;
 jspd = 20;

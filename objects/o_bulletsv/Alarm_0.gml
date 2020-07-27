@@ -8,4 +8,5 @@
     direction = direction + irandom_range(0, 15);}
    if chance1 == 1{
 	   hp-=1.9;
+	   instance_create_layer(x,y,"instances",o_gleb);
 	direction = direction - irandom_range(0, 15);}

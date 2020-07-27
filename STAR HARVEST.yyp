@@ -338,7 +338,7 @@
             "Key": "89643545-c233-42c0-a56e-7d7682707f2d",
             "Value": {
                 "id": "e99008ae-e90f-457d-98c7-cee8aac63621",
-                "resourcePath": "sprites\\s_walldeb\\s_walldeb.yy",
+                "resourcePath": "sprites\\s_gleb\\s_gleb.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -527,11 +527,11 @@
             }
         },
         {
-            "Key": "c5940b4e-2134-4614-97bd-be0332a99ea3",
+            "Key": "c35bcdf5-b209-403f-bbfb-70c5b75efcfe",
             "Value": {
-                "id": "6746e715-4f83-4561-9b92-b4776de6dbcb",
-                "resourcePath": "sprites\\s_walldeb2\\s_walldeb2.yy",
-                "resourceType": "GMSprite"
+                "id": "3f328d68-ef3d-473b-ab87-a0f9edf9f587",
+                "resourcePath": "objects\\o_gleb\\o_gleb.yy",
+                "resourceType": "GMObject"
             }
         },
         {

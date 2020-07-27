@@ -8,4 +8,4 @@
     direction = direction + irandom_range(0, 30);}
    if chance1 == 1{
 
-	direction = direction - irandom_range(0, 30);}
+	direction = direction - irandom_range(0, 30);instance_create_layer(x,y,"instances",o_gleb);}
