@@ -1,8 +1,8 @@
 
 //damage
-var da=distance_to_object(o_play)/3.5;
+var da=distance_to_object(o_play)/2.1;
 
-image_blend=make_color_hsv(255,(255-da),255-da);
+image_blend=make_color_hsv(pe,(255-da),255-da);
 if hp<0{sprite_index=s_wizarddeath;if image_index>8{instance_destroy();}}
 if hp>0{
 if distance_to_object(o_play)>2300{image_alpha-=.2;if image_alpha<0{instance_destroy();}}
@@ -37,13 +37,13 @@ if distance_to_object(o_play)<300 and !collision_line(x,y,o_play.x,o_play.y,obj_
 	hp+=.7;
 xa=0;
 ya=0;
-chi=choose(0,1,2,2,2,3,3,3);
+chi=choose(0,1,2,2,2,3);
 xa=x;
 ya=y;
 xa=xa+irandom_range(-1000,1000);
 ya=xa+irandom_range(-1000,1000);
 if xa!=0 and ya!=0 and chi==1 and !collision_circle(xa,ya,39,obj_solid1,1,1) and !collision_circle(xa,ya,106,o_play,1,1) and !collision_circle(xa,ya,90,o_moon,1,1) and !collision_circle(xa,ya,20,o_enem,1,1)and !collision_circle(xa,ya,9,o_fliers,1,1){instance_create_layer(xa,ya,"instances",o_fliers);}
-	if image_xscale<6{image_xscale+=random(.02);}}
+	if image_xscale<6{image_xscale+=random(.0056);}}
 //shooting
 if image_xscale>1.3{image_xscale-=.008;}
 

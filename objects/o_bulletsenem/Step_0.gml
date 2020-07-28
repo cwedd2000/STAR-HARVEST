@@ -11,3 +11,6 @@ image_angle=direction;
 if image_xscale>0{
 	image_xscale-=.02;image_yscale=image_xscale;}
 if image_xscale<.2{instance_destroy();}
+var da=distance_to_object(o_play)/2.1;
+
+image_blend=make_color_hsv(40,(255-da),255-da);

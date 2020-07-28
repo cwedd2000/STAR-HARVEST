@@ -5,6 +5,8 @@ grav = 1.2;randomise();g=0;
 spd = 8;image_xscale=random_range(1,1.5);
 image_yscale=image_xscale;
 xa=0;
+pe=random(255);
+image_blend=make_color_hsv(pe,(255),255);
 ya=0;
 hspd = 0;
 vspd = 0;

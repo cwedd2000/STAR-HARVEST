@@ -4,7 +4,7 @@
 // You can write your code in this editor
 var da=distance_to_object(o_play)/1.8;
 
-image_blend=make_color_hsv(242/da,(255-da),255-da);
+image_blend=make_color_hsv(242,(255-da),255-da);
 g+=1;if hp<0{instance_destroy();}
 if g<6{vspeed+=.5;}
 if g>0{vspeed+=.5;}
