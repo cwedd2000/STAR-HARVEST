@@ -7,7 +7,7 @@
 	chance1=choose(0,1);
 	if chance1 == 0{
 		hp-=.8;
-    direction = direction + irandom_range(0, 10);instance_create_layer(x,y,"instances",o_gleb);}
+    direction = direction + irandom_range(0, 10);}
    if chance1 == 1{
 	   hp-=.4;
 	direction = direction - irandom_range(0, 10);}

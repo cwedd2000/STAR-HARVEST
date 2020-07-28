@@ -9,4 +9,4 @@ vspd = 0;
 jspd = 20;
 image_angle=direction;
 
-hp=random(90)+50;c=0;
+hp=random(8)+3;c=0;

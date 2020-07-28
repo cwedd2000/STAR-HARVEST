@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 x=o_play.x;
-y=o_play.y;
+y=o_play.y-20;
 
 if keyboard_check_pressed(ord("1")){
 

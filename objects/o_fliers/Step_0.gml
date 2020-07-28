@@ -8,7 +8,7 @@ image_angle=direction;
 g+=.1;
 if g>2{g=0;}
 
-
+hp=hp*image_xscale;
 if collision_circle(x,y,60,o_fliers,1,1){if image_xscale>2.2{image_xscale-=random_range(.001,.03);
 }}
 if collision_circle(x,y,100,obj_solid1,1,1){if image_xscale<6{image_xscale+=random_range(.001,.020);
