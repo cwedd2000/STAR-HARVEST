@@ -8,7 +8,7 @@ image_angle=direction;
 g+=.1;
 if g>2{g=0;}
 
-hp=hp*image_xscale;
+hp=hp+image_xscale/1000;
 if collision_circle(x,y,60,o_fliers,1,1){if image_xscale>2.2{image_xscale-=random_range(.001,.03);
 }}
 if collision_circle(x,y,100,obj_solid1,1,1){if image_xscale<6{image_xscale+=random_range(.001,.020);
@@ -23,22 +23,22 @@ if image_xscale>2.2{image_xscale-=.0099;}
 
 if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
 		hp-=(.1+.1*random(1.2));
-			if c>0{c-=.001}
+			if c>0{c-=.004}
 }
 
 if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
 	hp-=random(6);
-	if c>0{c-=.03};if image_xscale>2{image_xscale-=.095;}
+	if c>0{c-=random(.1)};if image_xscale>2{image_xscale-=.095;}
 
 }
 if hp<0{image_alpha-=.2;}
 /// movement
 if image_alpha<0{instance_destroy();}
-if c<4.3{c+=.032;}
-if distance_to_object(o_play) < 120 and c>.01{c-=.001;}
+if c<3.3{c+=.020;}
+if distance_to_object(o_play) < 120 and c>.001{c-=.005;}
 if distance_to_object(o_play)<2400{direction=point_direction(x,y,o_play.x,o_play.y);mp_potential_step(o_play.x,o_play.y,(.03+c),1);}
 
 
 //shooting
 
-if collision_circle(x,y,80,o_play,1,1){playhp-=.09;}
+if collision_circle(x,y,80,o_play,1,1){playhp-=.023;}

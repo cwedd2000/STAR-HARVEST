@@ -4,7 +4,7 @@ draw_self();
 
 draw_text_color(x+40,y-26,jetpack,c_yellow,c_yellow,c_yellow,c_yellow,1);
 draw_text_color(x+40,y-50,playhp,c_red,c_red,c_red,c_red,1);
-draw_text_color(x-60,y-40,iron,c_orange,c_orange,c_orange,c_orange,1);
+draw_text_color(x-80,y-40,iron,c_orange,c_orange,c_orange,c_orange,1);
 
 	ra = choose("Mario Speedwagon",
 "Petey Cruiser",
