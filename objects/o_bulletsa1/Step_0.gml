@@ -1,5 +1,8 @@
 /// @description Insert description here
 speed+=5;
+var da=distance_to_object(o_play)/1.8;
+
+image_blend=make_color_hsv(242/da,(255-da),255-da);
 if speed>1{speed-=3;}
 if  place_meeting(x, y, o_planet) or place_meeting(x, y, o_fliers) or  place_meeting(x, y, o_moon) or place_meeting(x, y, o_enem) or place_meeting(x, y, obj_solid1)
 {

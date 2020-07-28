@@ -1,4 +1,6 @@
+var da=distance_to_object(o_play)/2.1;
 
+image_blend=make_color_hsv(40,(255-da),255-da);
 if distance_to_object(o_play)<135{sprite_index=s_enem11;}
 if distance_to_object(o_play)>135{sprite_index=s_enem1;}
 image_angle=direction;
@@ -26,7 +28,7 @@ if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
 
 if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
 	hp-=random(6);
-	if c>0{c-=.03};if image_xscale>1{image_xscale-=.002;}
+	if c>0{c-=.03};if image_xscale>1{image_xscale-=.095;}
 
 }
 if hp<0{image_alpha-=.2;}

@@ -1,6 +1,8 @@
 
 //damage
+var da=distance_to_object(o_play)/3.5;
 
+image_blend=make_color_hsv(255,(255-da),255-da);
 if hp<0{sprite_index=s_wizarddeath;if image_index>8{instance_destroy();}}
 if hp>0{
 if distance_to_object(o_play)>2300{image_alpha-=.2;if image_alpha<0{instance_destroy();}}

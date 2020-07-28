@@ -5,7 +5,9 @@ c+=1;
 if c<20 and distance_to_object(mouse)>100 and id==hook{direction=point_direction(x,y,mouse.x,mouse.y);}
 speed+=irandom_range(0,3);
 image_angle=direction;
+var da=distance_to_object(o_play)/1.8;
 
+image_blend=make_color_hsv(242/da,(255-da),255-da);
 
 mun=instance_nearest(x,y,o_moon);
 if place_meeting(x +   lengthdir_x(speed, direction), y + lengthdir_y(speed, direction), o_moon){
