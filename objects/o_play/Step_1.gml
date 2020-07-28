@@ -20,8 +20,8 @@ if keyboard_check_pressed(ord("S")){var che;
 
 		if image_speed>0{image_speed-=.005;}
 if keyboard_check(ord("S")) and jetpack>0{
-	if burn>60{burn=0;}
-	burn+=.3+random(.08);
+	if burn>50{burn=0;}
+	burn+=2;
 	if image_speed<3{image_speed+=0.009;}
 image_blend=make_color_rgb(255,irandom_range(0,255),255);
 	var che;
@@ -34,7 +34,7 @@ image_blend=make_color_rgb(255,irandom_range(0,255),255);
 		audio_sound_gain(snd_blast1,random(.21),0);
 	audio_sound_gain(snd_blast1,0,2);}
 	
-		if jetpack>0{vspd-=.01*random(14)*burn;jetpack-=1*random(22);
+		if jetpack>0{vspd-=random(.06)*burn;jetpack-=1*random(22);
 
 		instance_create_layer(x,y,"instances1",o_walldeb1);
 	

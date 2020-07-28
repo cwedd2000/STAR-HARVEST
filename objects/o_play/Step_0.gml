@@ -54,8 +54,8 @@ if keyboard_check_pressed(ord("Z"))
         {
         window_set_fullscreen(true);}}
 		
-if ( (collision_circle(x,y,50,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<996{
-		jetpack+=12.4;
+if ( (collision_circle(x,y,50,obj_solid1,1,1)) or collision_circle(x,y,60,o_moon,1,1)) and jetpack<2498{
+		jetpack+=20;
 }
 
 //check for ground
@@ -80,7 +80,7 @@ if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
 else
 {
 //gravity
-if (vspd < 14)
+if (vspd < 11)
     {
     vspd += grav;
     }
@@ -89,10 +89,10 @@ if (vspd < 14)
 }
   if !place_meeting(x, y+2, obj_solid1) and !place_meeting(x, y+2, o_moon) and (jkey) and canjumpack and jetpack>0
         {
-        vspd = -jspd/1.2;
+        vspd = -jspd/1.62;
 		canjumpack=0;
-		alarm[0]=43;
-			if jetpack>0{jetpack-=100;}
+		alarm[0]=23;
+			if jetpack>0{jetpack-=3;}
 			var counter;
 	counter=irandom_range(2,8);
 	for (var i=0;i<counter;i++){

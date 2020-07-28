@@ -3,7 +3,7 @@
 
 var da=distance_to_object(o_play)/1.6;
 
-image_blend=make_color_hsv(242/da,(255-da),255-da);
+image_blend=make_color_hsv(pe/da,(255)-da,255-da);
 image_angle=direction;
 if image_xscale>1{image_xscale-=.05;}
 if image_yscale>1{image_yscale-=.05;}

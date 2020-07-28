@@ -9,14 +9,14 @@ g+=.1;
 if g>2{g=0;}
 
 
-if collision_circle(x,y,60,o_fliers,1,1){if image_xscale>1{image_xscale-=random_range(.001,.03);
+if collision_circle(x,y,60,o_fliers,1,1){if image_xscale>2.2{image_xscale-=random_range(.001,.03);
 }}
-if collision_circle(x,y,100,obj_solid1,1,1){if image_xscale<5{image_xscale+=random_range(.001,.020);
+if collision_circle(x,y,100,obj_solid1,1,1){if image_xscale<6{image_xscale+=random_range(.001,.020);
 }}
 
 image_yscale=image_xscale;
 
-if image_xscale>1{image_xscale-=.004;}
+if image_xscale>2.2{image_xscale-=.0099;}
 
 
 
@@ -28,7 +28,7 @@ if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
 
 if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
 	hp-=random(6);
-	if c>0{c-=.03};if image_xscale>1{image_xscale-=.095;}
+	if c>0{c-=.03};if image_xscale>2{image_xscale-=.095;}
 
 }
 if hp<0{image_alpha-=.2;}
