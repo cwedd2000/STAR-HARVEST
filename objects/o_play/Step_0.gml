@@ -80,7 +80,7 @@ if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
 else
 {
 //gravity
-if (vspd < 9)
+if (vspd < 4)
     {
     vspd += grav;
     }
@@ -104,12 +104,16 @@ if (vspd < 9)
 // moving right
 if (rkey)
     {
-    hspd = spd;
+		if keyboard_check(vk_shift){hspd = 2*spd;}
+		if !keyboard_check(vk_shift){
+    hspd = spd;}
     }
 // moving left
 if (lkey)
     {
-    hspd = -spd;
+		if keyboard_check(vk_shift){hspd = 2*-spd;}
+				if !keyboard_check(vk_shift){
+    hspd = -spd;}
     }
 // check if not moving
 if ((!!rkey && !!lkey) || (rkey && lkey))

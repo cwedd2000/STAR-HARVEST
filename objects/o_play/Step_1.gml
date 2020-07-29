@@ -4,7 +4,7 @@ audio_sound_gain(snd_blast1,0,2);
 audio_sound_gain(snd_blast2,0,2);
 if keyboard_check_pressed(ord("S")){var che;
 	if image_speed>0{image_speed=0;}
-	if image_speed<1{image_speed+=0.04;}
+	if image_speed<10{image_speed+=0.75;}
 	che=-1;
 	che=choose(0,1);
 	if che ==0{audio_sound_gain(snd_blast2,.2,2);audio_play_sound(snd_blast2,1,0);}
@@ -16,9 +16,9 @@ if keyboard_check_pressed(ord("S")){var che;
 		instance_create_layer(x,y,"instances",o_walldeb1);
 	}}
 	
-		if image_speed>0 and jetpack<0{image_speed-=.04;}
+		if image_speed>0 and jetpack<0{image_speed-=.6;}
 
-		if image_speed>0{image_speed-=.005;}
+		if image_speed>3{image_speed-=.3;}
 if keyboard_check(ord("S")) and jetpack>0{
 	if burn>50{burn=0;}
 	burn+=2;
@@ -42,6 +42,6 @@ image_blend=make_color_rgb(255,irandom_range(0,255),255);
 }
 if !keyboard_check(ord("S")){
 	burn=0;
-		if image_speed>0{image_speed-=.01;}
+		if image_speed>0{image_speed-=.9;}
 audio_sound_gain(snd_blast1,0,1);
 audio_sound_gain(snd_blast2,0,1);}

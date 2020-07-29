@@ -165,7 +165,7 @@ draw_text_color(x-80,y-40,iron,c_orange,c_orange,c_orange,c_orange,1);
 		}
 
 	if dex<300{
-		draw_text_color(x-560,y-320,"A/D to move\nLeft Click to Shoot\nRight Click or F using an AK47 to fire GooWall Rounds\nSpacebar to Jump and Double jump\nPress and HOLD E To launch grappling hook *Tip:Pull rope down to Ascend or hold Spacebar when hooked.\nPress ESC to Quit\nPress R to Restart.\n Z to alternate fullscreen/windowed ",c_yellow,c_yellow,c_yellow,c_yellow,1);
+		draw_text_color(x-560,y-320,"A/D to move left and right. Shift to boost in direction.\nLeft Click to Shoot\nRight Click or F using an AK47 to fire GooWall Rounds\nSpacebar to Jump and Double jump\nPress and HOLD E To launch grappling hook *Tip:Pull rope down to Ascend or hold Spacebar when hooked.\nPress ESC to Quit\nPress R to Restart.\n Z to alternate fullscreen/windowed ",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		}
 
 if instance_exists(o_grapple) and instance_exists(o_gpoint) and hook !=0 and grappled!=0 {draw_line_width_color(o_grapple.x,o_grapple.y,hook.x,hook.y,3,c_white,c_white);}
