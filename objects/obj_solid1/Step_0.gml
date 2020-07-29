@@ -24,6 +24,6 @@ if hp<0{instance_destroy();}
 if place_meeting(x,y,o_walldeb1){
 		hp-=(.2+.5*random(3.2))*other.image_xscale;image_blend=make_color_hsv(4,255-da,255-da);
 }
-if place_meeting(x,y,o_walldeb11){
+if place_meeting(x,y,o_walldeb11) or place_meeting(x,y,o_gleb){
 	hp-=(.2+.7*random(2.5))*other.image_xscale;image_blend=make_color_hsv(random(30),255-da,255-da);	
 }

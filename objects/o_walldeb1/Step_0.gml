@@ -2,10 +2,10 @@
 // You can write your code in this editor
 if hp<0{instance_destroy();}g+=1;
 h+=1;
-if h>2 and h<4{instance_create_layer(x,y,"Instances1",o_walldeb11);}
-if g<4{vspeed+=random(.9);}
+if h>2 and h<5{instance_create_layer(x,y,"Instances1",o_walldeb11);}
+if g<4{vspeed+=random(.3);}
 if g>2{vspeed+=1;}
-if x<o_play.x{x+=.1}if x>o_play.x{x-=.1}
+if x<o_play.x{x+=.3}if x>o_play.x{x-=.3}
 image_angle=direction;
 var da=distance_to_object(o_play)/1.6;
 
