@@ -7,7 +7,7 @@ if g<4{vspeed+=random(.9);}
 if g>2{vspeed+=1;}
 if x<o_play.x{x+=.1}if x>o_play.x{x-=.1}
 image_angle=direction;
-var da=distance_to_object(o_play)/1.1;
+var da=distance_to_object(o_play)/1.6;
 
 image_blend=make_color_hsv(random(40),(255-da),255-da);
 if place_meeting(x,y,obj_solid1) or place_meeting(x,y,o_moon){

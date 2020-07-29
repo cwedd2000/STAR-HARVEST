@@ -34,7 +34,7 @@ image_blend=make_color_rgb(255,irandom_range(0,255),255);
 		audio_sound_gain(snd_blast1,random(.21),0);
 	audio_sound_gain(snd_blast1,0,2);}
 	
-		if jetpack>0{vspd-=random(.06)*burn;jetpack-=1*random(22);
+		if jetpack>0{vspd-=random(.055)*burn;jetpack-=1*random(22);
 
 		instance_create_layer(x,y,"instances1",o_walldeb1);
 	

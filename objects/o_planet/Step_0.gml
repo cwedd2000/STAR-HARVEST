@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var da=distance_to_object(o_play)/2.5;
+var da=distance_to_object(o_play)/1.9;
 
 image_blend=make_color_hsv(pe,(255-da),255-da);
 image_angle=direction;

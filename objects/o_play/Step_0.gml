@@ -80,7 +80,7 @@ if (place_meeting(x, y+1, obj_solid1) and grappled ==0)
 else
 {
 //gravity
-if (vspd < 11)
+if (vspd < 9)
     {
     vspd += grav;
     }

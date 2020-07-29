@@ -4,9 +4,9 @@ g+=1;if hp<0{instance_destroy();}
 if g<6{vspeed+=2.5;}
 if g>0{vspeed+=1.5;}
 
-var da=distance_to_object(o_play)/1.8;
+var da=distance_to_object(o_play)/1.3;
 
-image_blend=make_color_hsv(random(30),(255-da),255-da);
+image_blend=make_color_hsv(random(40),(255-da),255-da);
 image_angle=direction;
 if place_meeting(x,y,obj_solid1) or place_meeting(x,y,o_moon){ 
 if vspeed>0{vspeed-=14;}hp-=random(5.5);
