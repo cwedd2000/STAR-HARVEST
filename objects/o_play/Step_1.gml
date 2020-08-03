@@ -2,7 +2,7 @@
 // You can write your code in this editor
 audio_sound_gain(snd_blast1,0,2);
 audio_sound_gain(snd_blast2,0,2);
-if keyboard_check(ord("F")) and iron>0 and !place_meeting(mouse_x,mouse_y,obj_solid1){instance_create_layer(mouse_x,mouse_y,"instances",obj_solid1);if iron>0{iron-=1;}}
+if keyboard_check(ord("F")) and iron>0 and !place_meeting(mouse_x,mouse_y,obj_solid1){instance_create_layer(mouse_x,mouse_y,"instances",obj_solid1);if iron>0{iron-=.5;}}
 if keyboard_check_pressed(ord("S")){var che;
 	if image_speed>0{image_speed=0;}
 
