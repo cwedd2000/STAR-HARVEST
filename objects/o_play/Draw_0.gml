@@ -153,16 +153,16 @@ draw_text_color(x-80,y-40,iron,c_orange,c_orange,c_orange,c_orange,1);
 	if dex>420 and dex <800 {
 		draw_text_color(x-560,y-290,"Special Agent: ",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		draw_text_color(x-560,y-260,ra,c_yellow,c_yellow,c_yellow,c_yellow,1);
-		draw_text_color(x-560,y-220,"- Hold S - Use your rocket accelerator. Press 1-4 to toggle between a few weapons we've given you and 5 to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);
+		draw_text_color(x-560,y-220,"Hold S - Use your rocket accelerator",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		}
-	if dex>800 and dex <1100 {
+	if dex>800 and dex <1300 {
 		draw_text_color(x-560,y-290,"Special Agent: ",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		draw_text_color(x-560,y-260,da,c_yellow,c_yellow,c_yellow,c_yellow,1);
-		draw_text_color(x-560,y-220,"- Hold S - Use your rocket accelerator. Press 1-4 to toggle between a few weapons we've given you and 5 to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);
+		draw_text_color(x-560,y-220,"Hold S - Use your rocket accelerator. Press 1-4 to toggle between a few weapons we've given you and 5 to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		}
 
-	if dex<300{
-		draw_text_color(x-560,y-320,"Mission #1: Mine Iron Nodes and Reinforce your Space Station.\nA/D to move left and right.\nHold C to draw basic iron walls.\nShift to boost in direction.\nLeft Click to Shoot\nRight Click or F using an AK47 to fire GooWall Rounds\nSpacebar to Jump and Double jump\nPress and HOLD E To launch grappling hook *Tip:Pull rope down to Ascend or hold Spacebar when hooked.\nPress ESC to Quit\nPress R to Restart.\n Z to alternate fullscreen/windowed ",c_yellow,c_yellow,c_yellow,c_yellow,1);
+	if dex<420{
+		draw_text_color(x-560,y-320,"Mission #1: Mine Iron Nodes and Reinforce your Space Station.\nA/D to move left and right.\nHold C to draw basic iron walls.\nShift to boost in direction.\nLeft Click to Shoot\nRight Click or F using an AK47 to fire GooWall Rounds\nSpacebar to Jump and Double jump\nPress and HOLD E To launch grappling hook *Tip:Pull rope down to Ascend or hold Spacebar when hooked.\nPress ESC to Quit\nPress R to Restart.\nZ to alternate fullscreen/windowed ",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		}
 
 if instance_exists(o_grapple) and instance_exists(o_gpoint) and hook !=0 and grappled!=0 {draw_line_width_color(o_grapple.x,o_grapple.y,hook.x,hook.y,3,c_white,c_white);}
