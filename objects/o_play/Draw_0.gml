@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
-if xp > 10 {draw_text_color(x+40,y-76,xp,c_yellow,c_yellow,c_yellow,c_yellow,1);}
+
 draw_text_color(x+40,y-26,jetpack,c_yellow,c_yellow,c_yellow,c_yellow,1);
 draw_text_color(x+40,y-50,playhp,c_red,c_red,c_red,c_red,1);
 draw_text_color(x-80,y-40,iron,c_orange,c_orange,c_orange,c_orange,1);

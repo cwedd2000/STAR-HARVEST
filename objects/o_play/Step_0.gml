@@ -13,7 +13,7 @@ dex +=1;
 jkey = keyboard_check_pressed(vk_space);
 var quit = keyboard_check_pressed(vk_escape);
 if collision_circle(x,y,35,healthdrop,1,1){playhp+=6;}
-if collision_circle(x,y,35,o_minerals,1,1){iron +=1.5;xp+=1;}
+if collision_circle(x,y,35,o_minerals,1,1){iron +=1.5;}
 
 if quit{game_end();}
 var restart = keyboard_check(ord("R"));
