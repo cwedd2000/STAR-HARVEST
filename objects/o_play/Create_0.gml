@@ -14,7 +14,7 @@ playhp=100;
 globalvar hook;
 hook=0;
 jetpack=2500;
-
+xp=0;
 da =0;
 ra = 0 ;
 da = choose("Mario Speedwagon",
