@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "56992b39-f427-4240-a24e-eb8aa4427d10",
+            "Value": {
+                "id": "a578ed28-b0d0-4795-b629-b426a07c05db",
+                "resourcePath": "sounds\\snd_backg2\\snd_backg2.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "56a3d75e-a52b-4d57-ae69-816cdca6bb2d",
             "Value": {
                 "id": "12ddf3d4-12c6-4cd1-b43a-39aa66322d9d",
