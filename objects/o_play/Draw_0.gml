@@ -158,7 +158,7 @@ draw_text_color(x-80,y-40,iron,c_orange,c_orange,c_orange,c_orange,1);
 	if dex>800 and dex <1300 {
 		draw_text_color(x-560,y-290,"Special Agent: ",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		draw_text_color(x-560,y-260,da,c_yellow,c_yellow,c_yellow,c_yellow,1);
-		draw_text_color(x-560,y-220,"Hold (S) - Use your rocket accelerator",c_yellow,c_yellow,c_yellow,c_yellow,1);
+		draw_text_color(x-560,y-220,"Hold (S) - Use your rocket accelerator. Basic Iron Anti-Goop Turrets cost 400 iron and can be placed by pressing (C) ",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		}
 
 	if dex<420{

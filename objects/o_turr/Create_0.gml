@@ -3,7 +3,7 @@
 randomise();
 var track=0;
 track = instance_nearest(x,y,o_fliers);
-
+audio_sound_gain(snd_blast1,.06,0);audio_play_sound(snd_blast1,1,0);audio_sound_gain(snd_blast1,0,1);
 direction=point_direction(x,y,track.x,track.y);
 image_angle=direction;
 image_angle=direction;	image_blend=make_color_rgb(255,255,0);

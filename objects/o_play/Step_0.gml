@@ -15,7 +15,7 @@ instance_create_layer(x, y-35, "Instancesguns", Grenade); if iron>.1{iron-=.1;};
 
 }
 
-if keyboard_check_pressed(ord("V")) and !place_meeting(mouse_x,mouse_y,obj_solid1) and iron >100{instance_create_layer(mouse_x,mouse_y,"instances3",o_turret_mg);iron-=100;}
+if keyboard_check_pressed(ord("V")) and !place_meeting(mouse_x,mouse_y,obj_solid1) and iron >400{instance_create_layer(mouse_x,mouse_y,"instances3",o_turret_mg);iron-=400;}
 var jkey = 0;
 
 dex +=1;
@@ -46,8 +46,8 @@ if ungrapple {instance_deactivate_object(o_grapple);grappled=0;hook=0;}
 
 if instance_exists(o_gpoint) and grappled !=0 and hook !=0 and !collision_circle(x,y,90,o_moon,1,1){
 	if hook.speed==0 {
-		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,33,1);}
-	    if keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,34,0);}
+		if !keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,15,1);}
+	    if keyboard_check(vk_space){mp_linear_step(hook.x,hook.y,24,0);}
 			
 		}
 		
