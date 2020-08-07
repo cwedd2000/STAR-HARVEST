@@ -7,7 +7,10 @@ image_blend=make_color_hsv(pe-za,(255)-da,255-da);
 image_angle=direction;
 if image_xscale>1{image_xscale-=.05;}
 if image_yscale>1{image_yscale-=.05;}
-if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_turr) or place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
+if place_meeting(x,y,o_bulletsd){
+hp-=9;	image_blend=make_color_hsv(255,irandom_range(180,255)-da,irandom_range(170,255)-da);
+}
+if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_turr) or place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp){
 	hp-=4;image_blend=make_color_hsv(255,irandom_range(180,255)-da,irandom_range(170,255)-da);
 
 }

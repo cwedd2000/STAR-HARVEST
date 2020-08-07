@@ -10,7 +10,7 @@ var lkey = keyboard_check(ord("A"));
 // Assumes ThrowSpeed variable exists
 if(keyboard_check_pressed(ord("F"))) and iron>10{
  // Find relative mouse direction
-instance_create_layer(x, y-20, "Instancesguns", Grenade); iron-=10;// Spawns the grenade at your feet so you'll want to give it an accurate spawn position
+instance_create_layer(x, y-35, "Instancesguns", Grenade); iron-=10;// Spawns the grenade at your feet so you'll want to give it an accurate spawn position
 
 
 }
