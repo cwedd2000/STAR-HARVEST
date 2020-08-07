@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 var da=distance_to_object(o_play)/1.6;
+
 direction=direction+random_range(-.2,.2);
 image_blend=make_color_hsv(122,(255-da),255-da);
 if hp<0{instance_destroy();}
