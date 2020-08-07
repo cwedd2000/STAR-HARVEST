@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-audio_sound_gain(snd_blast1,0,2);
-audio_sound_gain(snd_blast2,0,2);
+audio_sound_gain(snd_blast1,0,1);
+audio_sound_gain(snd_blast2,0,1);
 
 
 if keyboard_check(ord("C")) and iron>0 {instance_create_layer(mouse_x,mouse_y,"instances",obj_solid1);if iron>0{iron-=.5;}}
@@ -12,8 +12,8 @@ if keyboard_check_pressed(ord("S")){var che;
 
 	che=-1;
 	che=choose(0,1);
-	if che ==0{audio_sound_gain(snd_blast2,.2,2);audio_play_sound(snd_blast2,1,0);}
-	if che==1{audio_sound_gain(snd_blast1,.2,2);audio_play_sound(snd_blast1,1,0);}
+	if che ==0{audio_play_sound(snd_blast2,1,0);audio_sound_gain(snd_blast2,.02,2);}
+	if che==1{audio_play_sound(snd_blast1,1,0);audio_sound_gain(snd_blast1,.02,2);}
 	if jetpack>0 and vspd{vspd-=6*random(1.3);jetpack-=1*random(9);}
 	var counter1;	
 	counter1=irandom_range(5,13);
@@ -33,10 +33,10 @@ image_blend=make_color_rgb(255,irandom_range(0,255),255);
 	che=-1;
 	che=choose(0,1);
 	if che ==0{audio_play_sound(snd_blast2,1,0);
-		audio_sound_gain(snd_blast2,random(.09),0);
+		audio_sound_gain(snd_blast2,random(.11),0);
 	audio_sound_gain(snd_blast2,0,2);}
 	if che==1{audio_play_sound(snd_blast1,1,0);
-		audio_sound_gain(snd_blast1,random(.27),0);
+		audio_sound_gain(snd_blast1,random(.14),0);
 	audio_sound_gain(snd_blast1,0,1);}
 	
 		if jetpack>0{vspd-=random(.055)*burn;jetpack-=1*random(22);
