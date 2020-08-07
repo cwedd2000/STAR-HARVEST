@@ -7,8 +7,8 @@ image_blend=make_color_hsv(pe-za,(255)-da,255-da);
 image_angle=direction;
 if image_xscale>1{image_xscale-=.05;}
 if image_yscale>1{image_yscale-=.05;}
-if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
-	hp-=(2+2*random(4));image_blend=make_color_hsv(255,irandom_range(180,255)-da,irandom_range(170,255)-da);
+if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_turr) or place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
+	hp-=4;image_blend=make_color_hsv(255,irandom_range(180,255)-da,irandom_range(170,255)-da);
 
 }
 if place_meeting(x,y,o_moon){hp-=(1+.8*random(4));}
@@ -22,8 +22,8 @@ if collision_circle(x,y,28,o_enem,1,1){hp-=random(.42);image_blend=make_color_hs
 if hp<0{instance_destroy();}
 
 if place_meeting(x,y,o_walldeb1){
-		hp-=(3.2+2.5*random(3.2));image_blend=make_color_hsv(4,255-da,255-da);
+		hp-=(.3+.2*random(1.2));image_blend=make_color_hsv(4,255-da,255-da);
 }
 if place_meeting(x,y,o_walldeb11) or place_meeting(x,y,o_gleb){
-	hp-=(4.7+2.7*random(2.5));image_blend=make_color_hsv(random(30),255-da,255-da);	
+	hp-=(.1+.2*random(0.5));image_blend=make_color_hsv(random(30),255-da,255-da);	
 }

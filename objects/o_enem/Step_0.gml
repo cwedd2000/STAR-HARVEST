@@ -37,7 +37,7 @@ if distance_to_object(o_play)<300 and !collision_line(x,y,o_play.x,o_play.y,obj_
 	hp+=.7;
 xa=0;
 ya=0;
-chi=choose(0,1,2,2,2,3,4,4,4,4,5,5,5,5,5,5,5,5,5);
+chi=choose(0,1,2,2,2,3,4,4,4,4);
 xa=x;
 ya=y;
 xa=xa+irandom_range(-1000,1000);
