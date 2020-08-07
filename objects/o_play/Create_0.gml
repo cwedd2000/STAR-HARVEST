@@ -3,6 +3,7 @@
 ///INITIALISE VARIABLES
 grav = 1.2;dex =1;randomise();
 iron=0;burn=0;
+
 image_blend=make_color_rgb(255,irandom_range(0,255),irandom_range(0,255));
 spd = 4;grappled=0;
 hspd = 0;image_speed=0;image_index=0;

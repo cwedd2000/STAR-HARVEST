@@ -5,7 +5,17 @@ grappled = keyboard_check(ord("E"));
 var ungrapple = keyboard_check_released(ord("E"));
 var rkey = keyboard_check(ord("D"));
 var lkey = keyboard_check(ord("A"));
-if keyboard_check_pressed(ord("V")) and !place_meeting(mouse_x,mouse_y,obj_solid1){instance_create_layer(mouse_x,mouse_y,"instances3",o_turret_mg);}
+
+// Throw code in player step event
+// Assumes ThrowSpeed variable exists
+if(keyboard_check_pressed(ord("F"))) and iron>10{
+ // Find relative mouse direction
+instance_create_layer(x, y-20, "Instancesguns", Grenade); iron-=10;// Spawns the grenade at your feet so you'll want to give it an accurate spawn position
+
+
+}
+
+if keyboard_check_pressed(ord("V")) and !place_meeting(mouse_x,mouse_y,obj_solid1) and iron >100{instance_create_layer(mouse_x,mouse_y,"instances3",o_turret_mg);iron-=100;}
 var jkey = 0;
 
 dex +=1;

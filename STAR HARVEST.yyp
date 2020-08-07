@@ -154,7 +154,7 @@
             "Key": "2e9bc059-04e3-4c7c-967e-decb06d26699",
             "Value": {
                 "id": "6975817a-6a12-4916-886b-3d0c4869d04d",
-                "resourcePath": "objects\\o_grenade\\o_grenade.yy",
+                "resourcePath": "objects\\Grenade\\Grenade.yy",
                 "resourceType": "GMObject"
             }
         },
