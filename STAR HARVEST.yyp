@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "26c214cd-960c-4b54-9063-8cea2b2bd387",
+            "Value": {
+                "id": "79296f23-ca54-4a37-b1e3-6b02def1cbd0",
+                "resourcePath": "sprites\\s_grenade\\s_grenade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2b8d8897-f051-4504-99f6-313b341a07c0",
             "Value": {
                 "id": "54bdf55c-d8a6-478c-9269-7229d0ded4c4",
@@ -127,11 +135,27 @@
             }
         },
         {
+            "Key": "2bd64d22-86e9-4396-8ac9-fe637415bc94",
+            "Value": {
+                "id": "310dffae-1fd7-4c23-a5be-34ff4c67bcf2",
+                "resourcePath": "sprites\\s_turret_mg\\s_turret_mg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2c3764fc-75c1-457d-9f0e-0de24ba4b021",
             "Value": {
                 "id": "771ab301-2f62-4efb-962e-c61f538b1efc",
                 "resourcePath": "views\\2c3764fc-75c1-457d-9f0e-0de24ba4b021.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2e9bc059-04e3-4c7c-967e-decb06d26699",
+            "Value": {
+                "id": "6975817a-6a12-4916-886b-3d0c4869d04d",
+                "resourcePath": "objects\\o_grenade\\o_grenade.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -660,6 +684,14 @@
                 "id": "c4b304db-0e1f-4e0c-bd4c-acd5f4e02de3",
                 "resourcePath": "views\\f4d60145-3abd-432e-8b48-aac0c2a434de.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f606d847-e54f-4851-bf50-ceff7468fc69",
+            "Value": {
+                "id": "ecf1787f-3793-4853-9457-0184d01ea5c4",
+                "resourcePath": "objects\\o_turret_mg\\o_turret_mg.yy",
+                "resourceType": "GMObject"
             }
         },
         {
