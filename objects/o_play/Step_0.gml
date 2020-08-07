@@ -8,9 +8,9 @@ var lkey = keyboard_check(ord("A"));
 
 // Throw code in player step event
 // Assumes ThrowSpeed variable exists
-if(keyboard_check_pressed(ord("F"))){
+if(keyboard_check_pressed(ord("G"))){
  // Find relative mouse direction
-instance_create_layer(x, y-35, "Instancesguns", Grenade); if iron>.1{iron-=.1;};// Spawns the grenade at your feet so you'll want to give it an accurate spawn position
+instance_create_layer(x, y-35, "Instancesguns", Grenade); if iron>.5{iron-=.5;};// Spawns the grenade at your feet so you'll want to give it an accurate spawn position
 
 
 }

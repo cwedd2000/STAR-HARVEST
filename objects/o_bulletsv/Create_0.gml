@@ -10,4 +10,4 @@ image_xscale=.8;
 image_yscale=image_xscale;	
 audio_play_sound(snd_shoot,1,0);
 audio_sound_gain(snd_shoot,.03,0);
-audio_sound_gain(snd_shoot,0,56);
+audio_sound_gain(snd_shoot,0,16);

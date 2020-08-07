@@ -9,7 +9,7 @@ if distance_to_object(o_fliers)<35{image_blend=make_color_hsv(60,(255-da),255-da
 g+=1;if hp<0{instance_destroy();}
 if g<6{vspeed+=.1;}
 if g>0{vspeed+=.2;}
-
+pe=random(45);
 image_angle=direction;
 if place_meeting(x,y,obj_solid1) or place_meeting(x,y,o_moon){ 
 if vspeed>0{vspeed-=1;}hp-=random(1.5);
@@ -17,5 +17,5 @@ if vspeed>0{vspeed-=1;}hp-=random(1.5);
 
 direction=direction+random_range(-2.5,2.5);
 if image_xscale<0{instance_destroy();}
-image_xscale-=.05*random(3);
+image_xscale-=.1*random(3);
 image_yscale=image_xscale;

@@ -6,4 +6,4 @@ image_blend=make_color_hsv(255-za,(255)-da,255-da);
 var track =0;
 track=instance_nearest(x,y,o_fliers);
 if collision_circle(x,y,150,o_fliers,1,1){hp-=.07;} if hp<0{instance_destroy();}
-if distance_to_object(track)<300{direction=point_direction(x,y,track.x,track.y);instance_create_layer(x,y,"instances",o_turr);instance_create_layer(x,y,"instances",o_turr);}
+if distance_to_object(track)<300 and !collision_line(x,y,track.x,track.y,obj_solid1,1,1) {hp-=.01;direction=point_direction(x,y,track.x,track.y);instance_create_layer(x,y,"instances",o_turr);instance_create_layer(x,y,"instances",o_turr);}
