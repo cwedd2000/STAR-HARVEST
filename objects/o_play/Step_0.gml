@@ -8,9 +8,9 @@ var lkey = keyboard_check(ord("A"));
 
 // Throw code in player step event
 // Assumes ThrowSpeed variable exists
-if(keyboard_check_pressed(ord("F"))) and iron>10{
+if(keyboard_check_pressed(ord("F"))){
  // Find relative mouse direction
-instance_create_layer(x, y-35, "Instancesguns", Grenade); iron-=10;// Spawns the grenade at your feet so you'll want to give it an accurate spawn position
+instance_create_layer(x, y-35, "Instancesguns", Grenade); if iron>.1{iron-=.1;};// Spawns the grenade at your feet so you'll want to give it an accurate spawn position
 
 
 }
@@ -23,7 +23,7 @@ dex +=1;
 jkey = keyboard_check_pressed(vk_space);
 var quit = keyboard_check_pressed(vk_escape);
 if collision_circle(x,y,35,healthdrop,1,1){playhp+=6;}
-if collision_circle(x,y,35,o_minerals,1,1){iron +=1.5;}
+if collision_circle(x,y,35,o_minerals,1,1){iron +=2.5;}
 
 if quit{game_end();}
 var restart = keyboard_check(ord("R"));

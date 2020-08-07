@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "715285e3-5698-4961-b4e6-a81156f4526f",
+            "Value": {
+                "id": "9380b203-aed2-41cd-832a-a3458e02090c",
+                "resourcePath": "sprites\\s_boom\\s_boom.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7192e56b-d34b-4a7c-83bd-baf3f990cbb4",
             "Value": {
                 "id": "f1a1e5c9-369f-4b56-9bfe-0fd13d52c4a9",
