@@ -3,4 +3,4 @@
 randomise();image_angle=direction;
 pe=random(59);
 
-hp=22;image_blend=make_color_hsv(pe,irandom_range(30,255),irandom_range(30,255));
+hp=45;image_blend=make_color_hsv(pe,irandom_range(30,255),irandom_range(30,255));

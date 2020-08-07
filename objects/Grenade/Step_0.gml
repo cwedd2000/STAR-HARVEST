@@ -4,9 +4,9 @@ image_angle=direction;
 // STEP
 MoveY += 3;
 t+=1;
-if t<20{vspeed+=.6;}audio_sound_gain(snd_blast1,2,0);
-if t>40{ audio_play_sound(snd_blast1,1,0);sprite_index=s_boom;direction=random(180)}
-if image_index >5{image_alpha-=.5;}if image_alpha <.2{instance_destroy();}audio_sound_gain(snd_blast1,0,2);
+if t<20{vspeed+=.6;}
+if t>40{image_xscale=random_range(.5,2);image_yscale=image_xscale;sprite_index=s_boom;audio_sound_gain(snd_blast1,.05,0);audio_play_sound(snd_blast1,1,0);audio_sound_gain(snd_blast1,0,1);direction=random(180);}
+if image_index >5{image_alpha-=.5;}if image_alpha <.2{instance_destroy();}
 var da=0;
 da=distance_to_object(o_play)/2.3;
 

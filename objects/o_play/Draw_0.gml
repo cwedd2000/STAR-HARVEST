@@ -153,12 +153,12 @@ draw_text_color(x-80,y-40,iron,c_orange,c_orange,c_orange,c_orange,1);
 	if dex>420 and dex <800 {
 		draw_text_color(x-560,y-290,"Special Agent: ",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		draw_text_color(x-560,y-260,ra,c_yellow,c_yellow,c_yellow,c_yellow,1);
-		draw_text_color(x-560,y-220,"Hold S - Use your rocket accelerator. Press 1-4 to toggle between weapons. The Desert Eagle (4) doesnt need iron to shoot. 5 to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);
+		draw_text_color(x-560,y-220,"Hold (S) - Use your rocket accelerator. Press (1-4) to toggle between weapons. The Desert Eagle (4) does not use up iron to fire. (5) to holster weapon.....",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		}
 	if dex>800 and dex <1300 {
 		draw_text_color(x-560,y-290,"Special Agent: ",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		draw_text_color(x-560,y-260,da,c_yellow,c_yellow,c_yellow,c_yellow,1);
-		draw_text_color(x-560,y-220,"Hold S - Use your rocket accelerator",c_yellow,c_yellow,c_yellow,c_yellow,1);
+		draw_text_color(x-560,y-220,"Hold (S) - Use your rocket accelerator",c_yellow,c_yellow,c_yellow,c_yellow,1);
 		}
 
 	if dex<420{

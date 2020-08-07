@@ -7,7 +7,7 @@ direction=point_direction(shell1.x,shell1.y,mouse_x,mouse_y);
 image_angle=direction;
 
 if mouse_check_button(mb_left) and canshoot and instance_exists(o_vector){
-
+	if o_play.iron>.2{o_play.iron-=.2;}
 	image_speed=1;
 	canshoot=0;
 	alarm[0]=3;
