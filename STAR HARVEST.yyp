@@ -695,6 +695,14 @@
             }
         },
         {
+            "Key": "f7a0c03f-aafd-41bb-b9b5-e4c4f5f70f7d",
+            "Value": {
+                "id": "2e7cd828-a8d6-4eff-b3f3-9393862559ce",
+                "resourcePath": "objects\\o_turr\\o_turr.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "facf3925-12c4-4d1d-8372-d2bb17c10f19",
             "Value": {
                 "id": "7026ddad-568b-4fcd-9f5b-2b8e102acf53",

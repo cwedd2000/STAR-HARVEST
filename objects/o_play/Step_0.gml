@@ -5,7 +5,7 @@ grappled = keyboard_check(ord("E"));
 var ungrapple = keyboard_check_released(ord("E"));
 var rkey = keyboard_check(ord("D"));
 var lkey = keyboard_check(ord("A"));
-
+if keyboard_check_pressed(ord("V")) and !place_meeting(mouse_x,mouse_y,obj_solid1){instance_create_layer(mouse_x,mouse_y,"instances3",o_turret_mg);}
 var jkey = 0;
 
 dex +=1;
@@ -104,14 +104,14 @@ if (vspd < 4)
 // moving right
 if (rkey)
     {
-		if keyboard_check(vk_shift){hspd = 2*spd;}
+		if keyboard_check(vk_shift){hspd = 3*spd;}
 		if !keyboard_check(vk_shift){
     hspd = spd;}
     }
 // moving left
 if (lkey)
     {
-		if keyboard_check(vk_shift){hspd = 2*-spd;}
+		if keyboard_check(vk_shift){hspd = 3*-spd;}
 				if !keyboard_check(vk_shift){
     hspd = -spd;}
     }

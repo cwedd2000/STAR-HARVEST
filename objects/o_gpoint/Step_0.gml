@@ -2,7 +2,7 @@
 // You can write your code in this editor
 image_angle=direction;
 c+=1;
-if c<20 and distance_to_object(mouse)>100 and id==hook{direction=point_direction(x,y,mouse.x,mouse.y);}
+if c<4 and distance_to_object(mouse)>300 and id==hook{direction=point_direction(x,y,mouse.x,mouse.y);}
 speed+=irandom_range(2,5);
 image_angle=direction;
 var da=distance_to_object(o_play)/2.1;

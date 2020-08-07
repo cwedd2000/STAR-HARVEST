@@ -7,6 +7,6 @@ image_angle=direction;
 h=0;c=0;hitmun=0;
 speed=irandom_range(1,3);
 
-hp=1.2;
+hp=.5;
 image_xscale=2.2;
 image_yscale=image_xscale;	audio_play_sound(snd_shoot,2,0);

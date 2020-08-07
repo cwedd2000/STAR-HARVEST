@@ -26,7 +26,7 @@ if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
 			if c>0{c-=.004}
 }
 
-if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
+if place_meeting(x,y,o_turr) or place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
 	hp-=random(6);
 	if c>0{c-=random(.1)};if image_xscale>2{image_xscale-=.095;}
 
