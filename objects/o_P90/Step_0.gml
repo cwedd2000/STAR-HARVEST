@@ -11,7 +11,7 @@ if mouse_check_button(mb_left) and canshoot and instance_exists(o_P90){
 	canshoot=false;
 	alarm[0]=2;
 
-	instance_create_layer(shell1.x+lengthdir_x(-1,dir),shell1.y+lengthdir_y(-1,dir),"instances",o_bulletsp);instance_create_layer(shell1.x+lengthdir_x(-11,dir),shell1.y+lengthdir_y(-11,dir),"instances",o_bulletsp);
+	instance_create_layer(shell1.x+lengthdir_x(-1,dir),shell1.y+lengthdir_y(-1,dir),"instances",o_bulletsp);
 }
 if !mouse_check_button(mb_left){
 

@@ -12,7 +12,7 @@ if mouse_check_button(mb_left) and canshoot and instance_exists(o_AK47){
 	canshoot=false;
 	alarm[0]=7;
 
-	instance_create_layer(shell1.x+lengthdir_x(-11,dir),shell1.y+lengthdir_y(-11,dir),"instances4",o_bulletsa);instance_create_layer(shell1.x+lengthdir_x(-1,dir),shell1.y+lengthdir_y(-1,dir),"instances4",o_bulletsa);
+	instance_create_layer(shell1.x+lengthdir_x(-1,dir),shell1.y+lengthdir_y(-1,dir),"instances4",o_bulletsa);
 }
 if (mouse_check_button(mb_right) or keyboard_check(ord("F"))) and cangoo and instance_exists(o_AK47) and o_play.iron>5{
 	image_speed=1;	if o_play.iron>.5{o_play.iron-=.5;}

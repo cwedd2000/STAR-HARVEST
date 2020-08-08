@@ -20,11 +20,36 @@ if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
 		hp-=(.1+.1*random(8.2));
 			if c>0{c-=.01};
 image_yscale=image_xscale;}
-if place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
-	hp-=random(6);if image_xscale>2{image_xscale-=random_range(.2,1);
-	if c>0{c-=.1};
-image_yscale=image_xscale;}
+var de = 0;
+de=instance_nearest(x,y,o_bulletsd);
+var ze = 0;
+ze=instance_nearest(x,y,o_bulletsa);
+var le = 0;
+le=instance_nearest(x,y,o_bulletsv);
+var ge = 0;
+ge=instance_nearest(x,y,o_bulletsp);
+if place_meeting(x,y,o_bulletsd){
+	
+hp-=.05*de.speed;	
 }
+if place_meeting(x,y,o_bulletsa){
+	
+hp-=.5*ze.speed;
+}
+if place_meeting(x,y,o_bulletsv){
+	
+hp-=.07*le.speed;
+}
+if place_meeting(x,y,o_bulletsp){
+	
+hp-=.1*ge.speed;
+}
+if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_turr){
+	hp-=.01;
+
+}if place_meeting(x,y,Grenade){hp-=.5;}
+
+
 
 /// movement
 mp_potential_step(o_play.x,o_play.y,(.01+c),1);

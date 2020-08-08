@@ -3,7 +3,7 @@
 var da=distance_to_object(o_play)/1.6;
 	var che=0;
 	che=choose(1,2,2);
-	if che ==1{instance_create_layer(x,y,"instances4",o_gleb);}
+	if che ==1{instance_create_layer(x,y,"instances4",o_frac);}
 image_blend=make_color_hsv(122,(255-da),255-da);
 if hp<0{instance_destroy();}
 

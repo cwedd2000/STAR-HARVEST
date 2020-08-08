@@ -7,5 +7,5 @@ speed=irandom_range(1,3);image_blend=make_color_rgb(255,155,255);
 hp=5+random(4);
 image_xscale=.8;
 image_yscale=image_xscale;audio_play_sound(snd_shoot,1,0);
-audio_sound_gain(snd_shoot,.04,0);
-audio_sound_gain(snd_shoot,0,70);
+audio_sound_gain(snd_shoot,.06,0);
+audio_sound_gain(snd_shoot,0,90);

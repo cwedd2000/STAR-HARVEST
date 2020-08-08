@@ -8,4 +8,4 @@ hp=5+random(4);
 image_xscale=random(5.8);
 image_yscale=image_xscale;audio_play_sound(snd_shoot,1,0);
 audio_sound_gain(snd_shoot,.092,0);
-audio_sound_gain(snd_shoot,0,45);
+audio_sound_gain(snd_shoot,0,85);

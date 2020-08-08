@@ -9,4 +9,4 @@ vspd = 0;
 jspd = 20;
 image_angle=direction;
 
-hp=44;c=0;
+hp=311;c=0;

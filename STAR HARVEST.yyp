@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "62a76aee-1e10-400a-a5a3-0bb66d3bfd19",
+            "Value": {
+                "id": "fd6c08e2-9f50-4f00-ab7c-8f30bd0ac632",
+                "resourcePath": "objects\\o_frac\\o_frac.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "652760f6-bca0-404c-a978-86b5178fb165",
             "Value": {
                 "id": "3df55c6d-17c8-48d9-bf10-b4f2d23210e8",

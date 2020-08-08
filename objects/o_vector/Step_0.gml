@@ -12,7 +12,7 @@ if mouse_check_button(mb_left) and canshoot and instance_exists(o_vector){
 	canshoot=0;
 	alarm[0]=3;
 
-	instance_create_layer(shell1.x+lengthdir_x(-11,dir),shell1.y+lengthdir_y(-11,dir),"instances",o_bulletsv);
+	instance_create_layer(shell1.x+lengthdir_x(-5,dir),shell1.y+lengthdir_y(-5,dir),"instances",o_bulletsv);
 }
 if !mouse_check_button(mb_left){
 

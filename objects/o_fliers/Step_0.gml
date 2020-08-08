@@ -8,15 +8,15 @@ image_angle=direction;
 g+=.1;
 if g>2{g=0;}
 
-hp=hp+image_xscale/1000;
-if collision_circle(x,y,60,o_fliers,1,1){if image_xscale>2.2{image_xscale-=random_range(.001,.03);
+
+if collision_circle(x,y,60,o_fliers,1,1){if image_xscale>3.0{image_xscale-=random_range(.0001,.001);
 }}
-if collision_circle(x,y,100,obj_solid1,1,1){if image_xscale<6{image_xscale+=random_range(.001,.020);
+if collision_circle(x,y,100,obj_solid1,1,1){if image_xscale<5{image_xscale+=random_range(.001,.020);
 }}
 
 image_yscale=image_xscale;
 
-if image_xscale>2.2{image_xscale-=.0099;}
+if image_xscale>1.2{image_xscale-=.00099;}
 
 
 
@@ -26,11 +26,37 @@ if place_meeting(x,y,o_walldeb1) or place_meeting(x,y,o_walldeb11){
 			if c>0{c-=.004}
 }
 
-if place_meeting(x,y,o_turr) or place_meeting(x,y,o_bulletsv) or place_meeting(x,y,o_bulletsa) or place_meeting(x,y,o_bulletsp) or place_meeting(x,y,o_bulletsd){
-	hp-=random(6);
-	if c>0{c-=random(.1)};if image_xscale>2{image_xscale-=.095;}
 
+var de = 0;
+de=instance_nearest(x,y,o_bulletsd);
+var ze = 0;
+ze=instance_nearest(x,y,o_bulletsa);
+var le = 0;
+le=instance_nearest(x,y,o_bulletsv);
+var ge = 0;
+ge=instance_nearest(x,y,o_bulletsp);
+if place_meeting(x,y,o_bulletsd){
+	
+hp-=.05*de.speed;	
 }
+if place_meeting(x,y,o_bulletsa){
+	
+hp-=.5*ze.speed;
+}
+if place_meeting(x,y,o_bulletsv){
+	
+hp-=.07*le.speed;
+}
+if place_meeting(x,y,o_bulletsp){
+	
+hp-=.1*ge.speed;
+}
+if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_turr){
+	hp-=.01;
+
+}if place_meeting(x,y,Grenade){hp-=.5;}
+
+
 if hp<0{image_alpha-=.2;}
 /// movement
 if image_alpha<0{instance_destroy();}

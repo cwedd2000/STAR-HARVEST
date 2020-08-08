@@ -12,7 +12,7 @@ if mouse_check_button(mb_left) and canshoot and instance_exists(o_DesertE){
 	canshoot=false;
 	alarm[0]=20;
 
-	instance_create_layer(shell1.x+lengthdir_x(-11,dir),shell1.y+lengthdir_y(-11,dir),"instances4",o_bulletsd);
+	instance_create_layer(shell1.x+lengthdir_x(-1,dir),shell1.y+lengthdir_y(-1,dir),"instances4",o_bulletsd);
 
 	
 	
