@@ -47,7 +47,7 @@ hp-=.1*ge.speed;
 if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_turr){
 	hp-=.01;
 
-}if place_meeting(x,y,Grenade){hp-=.5;}
+}if place_meeting(x,y,Grenade){hp-=2.5;}
 
 
 

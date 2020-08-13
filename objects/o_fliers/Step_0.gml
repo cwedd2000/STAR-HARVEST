@@ -54,7 +54,7 @@ hp-=.1*ge.speed;
 if place_meeting(x,y,o_bulletsenem) or place_meeting(x,y,o_turr){
 	hp-=.01;
 if image_xscale>2.2{image_xscale-=.000199;}
-}if place_meeting(x,y,Grenade){hp-=.5;if image_xscale>2.2{image_xscale-=.000199;}}
+}if place_meeting(x,y,Grenade){hp-=2.5;if image_xscale>2.2{image_xscale-=.000199;}}
 
 
 if hp<0{image_alpha-=.2;}
