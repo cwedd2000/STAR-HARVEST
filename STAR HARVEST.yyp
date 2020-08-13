@@ -655,6 +655,14 @@
             }
         },
         {
+            "Key": "ec2447c8-74a0-4339-8a07-6c1784f3ba78",
+            "Value": {
+                "id": "59136e1b-c12d-4120-922d-97c62c535a18",
+                "resourcePath": "sounds\\snd_backg3\\snd_backg3.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "ed3ba0f3-4e4d-4171-9d75-75bc45e3ff59",
             "Value": {
                 "id": "efdde867-bcda-42d5-844b-c2711a29f70b",
